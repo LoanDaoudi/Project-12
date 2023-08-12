@@ -10,7 +10,8 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
 .Logo img{
   width: 75px;
@@ -34,8 +35,13 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 60%;
+  height: 550px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 95px;
+  margin-bottom: 110px;
+  border-radius: 60px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
 
 .ProfilePicture img{
@@ -43,8 +49,62 @@ body{
   height: 390px;
   object-fit: cover;
   border-radius: 1000px;
+  margin-left: 55px;
 }
 
 .Presentation h1{
   font-size: 70px;
+}
+
+.Descriptif{
+  width: 60%;
+}
+
+.Caroussel {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.Caroussel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Caroussel img.active {
+  display: block !important; 
+}
+
+.Arrow-left {
+  font-size: 50px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Arrow-right {
+  font-size: 50px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cercle-carousel {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cercle {
+  color: white;
+  font-size: 25px;
 }
