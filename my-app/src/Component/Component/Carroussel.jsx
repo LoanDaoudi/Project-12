@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft, faCircle } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,6 +12,15 @@ const Carroussel = ({ images }) => {
   const prevImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000);  
+
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="Caroussel">
