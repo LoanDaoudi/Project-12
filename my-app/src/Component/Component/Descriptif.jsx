@@ -1,14 +1,24 @@
 import React from "react";
-
+import Button from "./Button";
+import GithubLogo from "./Images/GitHub-Logo.png"
 
 const Descriptif = () => {
     return(
         <div className="Descriptif">
             <h1>Loan Daoudi</h1>
             <h4>Développeur Front-end</h4>
-            <p>Lorem Ipsum est un générateur de faux textes aléatoires. Vous choisissez le nombre de paragraphes, de mots ou de listes. Vous obtenez alors un texte aléatoire que vous pourrez ensuite utiliser librement dans vos maquettes.
-                Si vous aimez la photographie d'art et l'esprit zen, jetez un œil sur le site de ce photographe à Palaiseau, en Essonne (France).</p>
-
+            <p>Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            Lorem Ipsum est un générateur de faux textes aléatoires...
+            </p>
+            <div className="Button-div">
+                <Button label="Me Contacter" />
+                <Button  imageUrl={GithubLogo}  href="https://github.com/LoanDaoudi"/>
+            </div>
         </div>
     );
 };

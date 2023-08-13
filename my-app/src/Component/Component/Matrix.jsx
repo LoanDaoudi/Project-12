@@ -37,35 +37,39 @@ const MatrixBackground = () => {
           
     ];
 
-    function createRow(index) {
-        const row = document.createElement('div');
-        row.className = 'matrix-row';
-        row.style.top = `${(window.innerHeight / 50) * index}px`; 
-        row.style.animationDuration = `${8 + Math.random() * 10}s`;
+    function createRow(index, initialDelay = 0) {
+      const row = document.createElement('div');
+      row.className = 'matrix-row';
+      row.style.top = `${(window.innerHeight / 80) * index}px`;  
+      const animationDuration = 18 + Math.random() * 25;
+      row.style.animationDuration = `${animationDuration}s`;
+      row.style.animationDelay = `-${initialDelay}s`;  
   
-        const randomSnippet = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
-        const chars = randomSnippet.split('');
-  
-        chars.forEach(char => {
+      const randomSnippet = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+      const chars = randomSnippet.split('');
+    
+      chars.forEach(char => {
           const span = document.createElement('span');
           span.innerText = char;
-
+  
           if (isPartOfLink(char, randomSnippet)) {
-            span.style.color = 'red';
-            span.style.fontWeight = 'bold';
+              span.style.color = 'red';
+              span.style.fontWeight = 'bold';
           }
-
+  
           row.appendChild(span);
-        });
-  
-        container.appendChild(row);
-        row.addEventListener('animationend', () => {
+      });
+    
+      container.appendChild(row);
+      row.addEventListener('animationend', () => {
           container.removeChild(row);
-          createRow(index); 
-        });
-      }
+          createRow(index);
+      });
+  }
   
-      for (let i = 0; i < 50; i++) {createRow(i);}
+  for (let i = 0; i < 80; i++) {  
+      createRow(i, Math.random() * 10);
+  }
   
       return () => {
         const existingRows = container.querySelectorAll('.matrix-row');
