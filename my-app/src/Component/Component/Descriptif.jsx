@@ -16,7 +16,7 @@ const Descriptif = () => {
             Lorem Ipsum est un générateur de faux textes aléatoires...
             </p>
             <div className="Button-div">
-                <Button label="Me Contacter" />
+                <Button label="Me Contacter" href="#contact-me" />
                 <Button  imageUrl={GithubLogo}  href="https://github.com/LoanDaoudi"/>
             </div>
         </div>
