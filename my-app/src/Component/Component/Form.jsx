@@ -29,7 +29,7 @@ const Form = () => {
             <h4 id="contact-me">Me Contacter :</h4>
             <div className="Email-onclick" onClick={copyEmailToClipboard} ref={emailRef} style={{ padding: "5px", cursor: "pointer"}}>
                 <p>loanmateo.daoudi@gmail.com</p>
-                <FontAwesomeIcon icon={faCopy} />
+                <FontAwesomeIcon icon={faCopy} className="logo-copy" />
             </div>
             <form onSubmit={handleSubmit}>
                 <input type="email" placeholder="Votre email" required />
