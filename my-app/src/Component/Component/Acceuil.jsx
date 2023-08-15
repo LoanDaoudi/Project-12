@@ -15,12 +15,12 @@ const Accueil = () => {
     <body>
       <div className='Main'>
       <Header/>
-      <Presentation/>
+      <div id="a-propos"><Presentation /></div>
       <Carroussel images={images}/>
-      <MesServices/>
+      <div id="services"><MesServices /></div>
       </div>
       <div className='Footer-poisition'>
-      <Footer/>
+      <div id="contact"><Footer /></div>
       </div>
     /</body>
     
