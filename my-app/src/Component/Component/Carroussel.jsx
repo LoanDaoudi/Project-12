@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from "react";
+import SlideContent from "./Description-Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft, faCircle } from "@fortawesome/free-solid-svg-icons";
+import './Style-Component/Carousel.css'
 
-const Carroussel = ({ images }) => {
+const Carroussel = ({ slides }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const goToSlide = (index) => {
+    setCurrentImageIndex(index);
+  };
+
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
 
   useEffect(() => {
@@ -25,22 +31,25 @@ const Carroussel = ({ images }) => {
   return (
     <div className="Caroussel">
       <FontAwesomeIcon icon={faArrowLeft} className="Arrow-left" onClick={prevImage} />
+
       <div className="carousel-images">
-        {images.map((image, index) => (
+        {slides.map((slide, index) => (
           <div
             key={index}
             className={`carousel-image ${index === currentImageIndex ? "active" : ""}`}
           >
-            <img src={image} alt={`Carrousel ${index}`} />
+            <img src={slide.image} alt={`Carrousel ${index}`} />
+            <SlideContent link={slide.link} title={slide.title} text={slide.text} subtitle={slide.subtitle} />
           </div>
         ))}
       </div>
       <div className="cercle-carousel">
-        {images.map((_, index) => (
+        {slides.map((_, index) => (
           <FontAwesomeIcon
             key={index}
             icon={faCircle}
             className={`cercle ${index === currentImageIndex ? "active" : ""}`}
+            onClick={() => goToSlide(index)}  // Ajoutez cette ligne
           />
         ))}
       </div>

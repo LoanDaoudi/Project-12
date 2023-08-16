@@ -1,0 +1,140 @@
+.Caroussel {
+    position: relative;
+    margin: auto;
+    max-width: 80vw;
+    border-radius: 35px;
+    height: 50vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+  }
+  
+  .SlideConent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .carousel-title {
+    font-size: 2.5rem;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: black;
+}
+
+.carousel-subtitle {
+  font-size: 1.5rem;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+}
+
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;  
+    color: #b01105;
+    z-index: 15;
+}
+
+.carousel-inner-link {
+    display: block;    
+    text-align: right; 
+    font-size: 25px; 
+    z-index: 15;
+    color: #e486a6; 
+
+}
+
+  .Caroussel img {
+    max-width: 100%;
+     min-height: 1095px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
+  }
+  
+  .Arrow-left, .Arrow-right {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    font-size: 55px;
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 15px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 15px;
+    z-index: 10;
+  }
+  
+  .cercle-carousel {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
+  }
+  
+  
+  
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
+  }
+
+
+ 
