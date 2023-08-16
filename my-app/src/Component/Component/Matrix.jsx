@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import './Style-Component/Background-Matrix.css';
 
 const MatrixBackground = () => {
   const containerRef = useRef(null);

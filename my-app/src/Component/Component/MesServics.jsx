@@ -1,6 +1,7 @@
 import React from "react";
 import CarrePresentation from "./CarrePresentation";
 import { faDesktop, faChartPie, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import './Style-Component/MesServices.css'
 
 const MesServices = () => {
     return(
