@@ -19,7 +19,7 @@
     right: 0;
     height: 100%;
     width: 25%;  
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,12 +27,16 @@
     z-index: 10;
   }
 
+  .SlideConent a {
+    text-decoration: none;
+  }
   .carousel-title {
-    font-size: 2.5rem;   
+    font-size: 3.5rem;   
     text-align: left;  
     z-index: 15;
     opacity: 1;
-    color: black;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
 }
 
 .carousel-subtitle {
@@ -40,24 +44,38 @@
   text-align: left;    
   margin-bottom: 0px; 
   z-index: 15;
+  color: white;
+
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
 }
 
 .carousel-text {
     max-width: 80%;    
     margin: 0 auto;   
-    margin-bottom: 20px;  
-    color: #b01105;
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    color: white;
     z-index: 15;
 }
 
 .carousel-inner-link {
-    display: block;    
-    text-align: right; 
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
     font-size: 25px; 
     z-index: 15;
     color: #e486a6; 
-
 }
+
+.material-symbols-outlined {
+  font-size: 35px;
+}
+
+
+
 
   .Caroussel img {
     max-width: 100%;
