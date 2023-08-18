@@ -1,0 +1,185 @@
+.Skills {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 150px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.categories {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px dotted #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;  /* ajustez ces valeurs comme vous le souhaitez */
+    height: 50px; /* ajustez ces valeurs comme vous le souhaitez */
+    background-color: #000;  /* couleur noire */
+    border-radius: 50%;  /* pour le rendre circulaire */
+    z-index: 2;  /* pour s'assurer qu'il se trouve au-dessus des autres éléments */
+}
+
+
+.category h4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;  
+    z-index: 1;
+    font-family: 'Lora', sans-serif;
+}
+    
+
+.category.front-end h4 {
+    bottom: 100%; 
+    margin-bottom: 35px; 
+}
+
+.category.back-end h4 {
+    bottom: 100%;
+    margin-bottom: 35px;
+}
+
+.category.tools h4 {
+    top: 100%; 
+    margin-top: 25px;
+     white-space: nowrap;
+}
+
+.icon, .picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 35px;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+.picture {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+#ReactLogo {
+    color: #61DAFB;
+    transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+
+}
+
+#ReactJs {
+    color: #F7DF1E;
+    transform: translate(-50%, -50%) rotate(72deg) translate(100px) rotate(-72deg);
+}
+
+#ReactHtml {
+    color: #E34F26;
+    transform: translate(-50%, -50%) rotate(144deg) translate(100px) rotate(-144deg);
+}
+
+#ReactCss {
+    color: #1572B6;
+    transform: translate(-50%, -50%) rotate(216deg) translate(100px) rotate(-216deg);
+}
+
+#ReactSass {
+    color: #CC6699;
+    transform: translate(-50%, -50%) rotate(288deg) translate(100px) rotate(-288deg);
+}
+
+#ReactNode {
+    color: #43853D;
+    transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+}
+
+#ReactGithub {
+    color: #181717;
+    transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+
+}
+
+#ReactGit {
+    color: #F05032;
+    transform: translate(-50%, -50%) rotate(72deg) translate(100px) rotate(-72deg);
+}
+
+#SqlLogo {
+    transform: translate(-50%, -50%) rotate(120deg) translate(100px) rotate(-120deg);
+
+}
+
+#MongoLogo {
+    transform: translate(-50%, -50%) rotate(240deg) translate(100px) rotate(-240deg);
+}
+
+#PostmanLogo {
+    transform: translate(-50%, -50%) rotate(144deg) translate(100px) rotate(-144deg);
+}
+
+#NetlifyLogo {
+    transform: translate(-50%, -50%) rotate(288deg) translate(100px) rotate(-288deg);
+}
+
+#JqueryLogo {
+    transform: translate(-50%, -50%) rotate(216deg) translate(100px) rotate(-216deg);
+}
+
+
+.category.front-end {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-175%, -120%); 
+}
+
+.category.back-end {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(80%, -120%); 
+}
+
+.category.tools {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -25%);
+}

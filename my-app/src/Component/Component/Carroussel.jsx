@@ -49,7 +49,7 @@ const Carroussel = ({ slides }) => {
             key={index}
             icon={faCircle}
             className={`cercle ${index === currentImageIndex ? "active" : ""}`}
-            onClick={() => goToSlide(index)}  // Ajoutez cette ligne
+            onClick={() => goToSlide(index)} 
           />
         ))}
       </div>

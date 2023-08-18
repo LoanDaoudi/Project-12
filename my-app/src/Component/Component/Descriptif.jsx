@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import GithubLogo from "./Images/GitHub-Logo.png"
+import './Style-Component/Apropos.css'
 
 const Descriptif = () => {
     return(
