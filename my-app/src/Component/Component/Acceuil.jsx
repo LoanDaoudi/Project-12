@@ -64,7 +64,7 @@ const Accueil = () => {
       <Carroussel slides={slides}/>
       <div id="services"><MesServices /></div>
       </div>
-      <div> <Skills/> </div>
+      <div id='Skills'> <Skills/> </div>
       <div className='Footer-poisition'>
       <div id="contact"><Footer /></div>
       </div>

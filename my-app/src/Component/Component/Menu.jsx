@@ -29,7 +29,7 @@ const Menu = () => {
                         <li><a href="#a-propos">A Propos</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#">Projets</a></li>
-                        <li><a href="#">Formations</a></li>
+                        <li><a href="#Skills">Compétences</a></li>
                         <li><a href="#">Formations</a></li>
                         <li><a href="#">Formations</a></li>
                         <li><a href="#">Formations</a></li>

@@ -3,6 +3,7 @@
     padding: 40px;
     width: 60%;    
     margin: auto;
+    margin-top: 85px;
     margin-bottom: 150px;
     background: #f4f4f4;
     border-radius: 10px;
@@ -210,7 +211,7 @@ h3 {
     bottom: 50%;
     transform: rotate(-130deg); /* -60 degrés pour obtenir un angle de 8h */
     opacity: 0;
-    animation: moveDiagonalLine8h 1.5s forwards infinite ;
+    animation: moveDiagonalLine8h 3s forwards infinite ;
 }
 
 .category.back-end:hover::after {
@@ -228,7 +229,7 @@ h3 {
     content: "";
     position: absolute;
     height: 3.5px;
-    width: 45%; /* Taille fixe de la ligne */
+    width: 105%; /* Taille fixe de la ligne */
     background-color: #000;
     top: 75%;
     left: 25%;
@@ -278,14 +279,21 @@ h3 {
 
 
 @keyframes moveDiagonalLineForTools {
-    0%, 100% {
-        left: 25%;
-        top: 75%;
+    0% {
+        left: -45%;
+        top: 7%;    
         opacity: 1;
     }
+
     50% {
-        left: -20%; /* Cette valeur dépend de l'amplitude de déplacement souhaitée. */
-        top: 115%;  /* Cette valeur dépend de l'amplitude de déplacement souhaitée. */
+        
+        top: -60px;
+        left: -185px;
+    }
+    
+    100% {
+        left: -45%;
+        top: 7%;    
         opacity: 1;
     }
 }
