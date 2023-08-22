@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
 
 h3 {
@@ -41,6 +42,13 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.category:hover {
+    transform: scale(0.9);
+}
+
+.category, .category::before {
+    transition: transform 0.3s ease;
+}
 
 .category::before {
     content: "";
@@ -55,6 +63,24 @@ h3 {
     z-index: 2;  
 }
 
+.category:hover::before {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+
+
+.category.front-end:hover {
+    transform: translate(-175%, -120%) scale(0.9);
+}
+
+.category.back-end:hover {
+    transform: translate(80%, -120%) scale(0.9);
+}
+
+.category.tools:hover {
+    transform: translate(-50%, -25%) scale(0.9);
+}
 
 .category h4 {
     position: absolute;
@@ -92,7 +118,7 @@ h3 {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    z-index: 100;
+    z-index: 5;
 }
 
 #ReactLogo, #ReactJs, #ReactHtml, #ReactCss, #ReactSass, #ReactNode, #ReactGithub, #ReactGit, #SqlLogo, #MongoLogo, #PostmanLogo, #NetlifyLogo, #JqueryLogo {
@@ -181,12 +207,12 @@ h3 {
     content: "";
     position: absolute;
     height: 3.5px;
-    width: 105%; /* Taille fixe de la ligne */
+    width: 175%; /* Taille fixe de la ligne */
     background-color: #000;
     top: 50%;
     left: 50%;
     opacity: 0;
-    animation: moveLine 3s forwards infinite; /* Utilisation de l'animation moveLine */
+    animation: moveLine 2s  forwards infinite; /* Utilisation de l'animation moveLine */
 }
 
 .category.front-end:hover::after {
@@ -211,7 +237,7 @@ h3 {
     bottom: 50%;
     transform: rotate(-130deg); /* -60 degrés pour obtenir un angle de 8h */
     opacity: 0;
-    animation: moveDiagonalLine8h 3s forwards infinite ;
+    animation: moveDiagonalLine8h 2s  forwards infinite ;
 }
 
 .category.back-end:hover::after {
@@ -235,7 +261,7 @@ h3 {
     left: 25%;
     opacity: 0;
     transform: rotate(45deg); /* Pour faire pivoter la ligne de 45 degrés */
-    animation: moveDiagonalLineForTools 3s forwards infinite;
+    animation: moveDiagonalLineForTools 2s  forwards infinite;
 }
 
 .category.tools:hover::after {
@@ -249,7 +275,7 @@ h3 {
         opacity: 1;
     }
     50%{
-        left: 200%;
+        left: 140%;
         opacity: 1;
     }
     100% {
