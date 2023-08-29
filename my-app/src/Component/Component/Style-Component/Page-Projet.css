@@ -1,0 +1,62 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-header {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 3.5rem;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif;
+}
+
+h2{
+    font-size: 1.5rem;   
+    text-align: left;    
+    margin-bottom: 30px; 
+    z-index: 15;
+    color: white;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+}
+
+.project-image {
+    width: 80%;
+    height: auto;
+}
+
+.project-description {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: justify;
+    display: flex;
+}
+
+.project-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.project-logo {
+    width: 50px; /* Vous pouvez ajuster la taille selon vos besoins */
+    height: auto;
+}

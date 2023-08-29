@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
 import Accueil from './Component/Component/Acceuil';
-import Projets from './Component/Component/Projets';
+import PageProjet from './Component/Component/Page-Projets';
 import Contact from './Component/Component/Contact';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes> 
         <Route path="/" element={<Accueil />} />
-        <Route path="/projets" element={<Projets />} />
+        <Route path="/projets/:projectId" element={<PageProjet />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

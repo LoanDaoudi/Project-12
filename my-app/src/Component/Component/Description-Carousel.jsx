@@ -1,16 +1,16 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SlideContent = ({ link, title, text, subtitle }) => (
   <div className='SlideConent'>
-      <a href={link} className="carousel-title-link">
+      <Link to={link} className="carousel-title-link">
         <div className="carousel-title">{title}</div>
-      </a>
+      </Link>
       <div className='carousel-subtitle'>{subtitle}</div>
       <div className="carousel-text">{text}</div>
-      <a href={link} className="carousel-inner-link">
+      <Link to={link} className="carousel-inner-link">
         Voir le projet 
         <span className="material-symbols-outlined">arrow_forward</span>
-      </a>
+      </Link>
   </div>
 );
 

@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjetItem = ({ details, isVisible }) => {
     const [isActive, setIsActive] = useState(false);
 
     if (!isVisible) {
-        return null;  // Si le projet n'est pas visible, ne rien rendre.
+        return null;  // 
     }
 
     return (
@@ -16,7 +17,7 @@ const ProjetItem = ({ details, isVisible }) => {
             <div className="projet-content">
                 <h2>{details.title}</h2>
                 <p>{details.text}</p>
-                <a href={details.link}>Voir plus</a>
+                <Link to={details.link}>Voir plus</Link>
             </div>
         </div>
     );

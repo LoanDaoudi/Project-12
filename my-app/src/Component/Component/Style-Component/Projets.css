@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 }
 
 
@@ -31,6 +32,8 @@
     background-color: white;
     border-radius: 15%;
     margin-bottom: 15%;
+    cursor: pointer;
+    z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -93,6 +96,8 @@
 }
 
 
+
+
 .Projet-item.active h2 {
     transform: translateY(-100% + 65px); 
 }
@@ -102,13 +107,22 @@
     margin: 10px 0;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.3s 0.5s ease-in-out, transform 0.3s 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; /* Réduit à 0.2s pour une transition plus rapide */
 }
 
 .Projet-item.active .projet-content p, 
 .Projet-item.active .projet-content a {
     opacity: 1;
     transform: translateY(0);
+}
+
+.Projet-item .projet-content p {
+    font-size: 0.9rem; /* Réduit la taille du texte. Ajustez selon vos préférences. */
+
+}
+
+.Projet-item .projet-content a {
+    font-size: 1.2rem;
 }
 
 .Projet-item {

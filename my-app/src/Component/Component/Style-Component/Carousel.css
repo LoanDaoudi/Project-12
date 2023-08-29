@@ -101,6 +101,15 @@
     opacity: 1; 
     z-index: 0;
   }
+
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
   
   .Arrow-left, .Arrow-right {
     position: absolute;
