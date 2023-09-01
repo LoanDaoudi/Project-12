@@ -16,6 +16,7 @@ import PostmanLogo from "./Images/PostmanLogo.png";
 import MongoLogo from "./Images/mongodb-logo.png";
 import JqueryLogo from "./Images/jquery-logo.png";
 import Footer from './Footer';
+import Header from './Header';
 import './Style-Component/Page-Projet.css'
 
 
@@ -31,7 +32,7 @@ const PageProjet = () => {
       subtitle: 'Site de location pour vacances',
       text: 'Découvrez un site conçu avec passion, entièrement codé en HTML/CSS, qui offre aux voyageurs et aux vacanciers une plateforme élégante et conviviale pour trouver leur lieu de séjour idéal.',
       link: '/projets/1',
-      detailedDescription:'',
+      detailedDescription:'Booki représente le début de mon aventure dans le monde du développement web. C est un site de location de séjours pour vacanciers, conçu avec passion et détermination en utilisant pour la première fois les langages HTML5 et CSS3. Grâce à HTML5, j ai structuré un site intuitif et facilement navigable, tandis que CSS3 m a permis d injecter du dynamisme avec un design attrayant. Au cœur de Booki se trouve une fonction de recherche avancée qui permet aux utilisateurs de filtrer les locations selon leurs préférences, et un espace personnel pour gérer les réservations et les informations personnelles. Plus qu un simple site web, Booki est le reflet de mes premières réalisations en matière de développement, une fierté qui m a poussé vers des horizons encore plus ambitieux.',
       logos: [CssLogo, HtmlLogo, GitLogo, GithubLogo],
 
     },
@@ -90,19 +91,25 @@ if (!project) {
     return (
       <div>
       <div className="project-page">
-      <div className='title-header'>
-      <h1>{project.title}</h1>
-      <h2>{project.subtitle}</h2>
+        <Header/>
+        <div className='title-header'>
+          <h1>{project.title}</h1>
+          <h2>{project.subtitle}</h2>
+        </div>
+        <div className="project-content">
+          <img src={project.image} alt={project.title} className="project-image" />
+          <div className='project-description'>
+          <h1>{project.title}</h1>
+          <p className="">{project.detailedDescription}</p>
+          <div className='logo'>
+          {project.logos.map((logoUrl, index) => (
+            <img key={index} src={logoUrl} alt="Logo" className="project-logo" />
+          ))}
+          </div>
+          </div>
+        </div>
       </div>
-      <img src={project.image} alt={project.title} className="project-image" />
-      <p className="project-description">{project.detailedDescription}</p>
-      <div className="project-logos">
-        {project.logos.map((logoUrl, index) => (
-          <img key={index} src={logoUrl} alt="Logo" className="project-logo" />
-        ))}
-      </div>
-    </div>
-    <Footer/>
+      <Footer className='Footer'/>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import './Style-Component/MenuBurger.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 const Menu = () => {
@@ -26,15 +27,11 @@ const Menu = () => {
                         <FontAwesomeIcon icon={faTimes} />
                     </div>
                     <ul>
+                    <li><Link to="/">Accueil</Link></li>
                         <li><a href="#a-propos">A Propos</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#Projets">Projets</a></li>
                         <li><a href="#Skills">Compétences</a></li>
-                        <li><a href="#">Formations</a></li>
-                        <li><a href="#">Formations</a></li>
-                        <li><a href="#">Formations</a></li>
-                        <li><a href="#">Formations</a></li>
-                        <li><a href="#">Formations</a></li>
+                        <li><a href="#Projets">Projets</a></li>                       
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div className="github-icon">
