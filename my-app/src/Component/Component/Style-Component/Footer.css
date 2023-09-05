@@ -6,6 +6,7 @@
     height: 20%;
     background-color: black;
     margin: 0;
+    margin-top: 150px;
   }
   
   
@@ -51,3 +52,53 @@
     border: 3px solid white;
     border-radius: 15px;
   }
+
+  /* Styles pour tablette (768px) */
+@media (max-width: 768px) {
+  .Email-onclick {
+      gap: 15px;
+      font-size: 20px;
+      margin-bottom: 15px;
+      flex-direction: row;
+      align-items: center;
+  }
+  
+  .Form h4 {
+      font-size: 35px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  
+  .Form input, .Form textarea {
+      width: 70%;
+      height: 45px;
+  }
+}
+
+/* Styles pour téléphone (320px à 425px) */
+@media (max-width: 425px) {
+  .Footer {
+      height: auto;
+  }
+
+  .Email-onclick {
+      gap: 10px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+  }
+  
+  .Form h4 {
+      font-size: 30px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  
+  .Form input, .Form textarea {
+      width: 70%;
+      height: 40px;
+      border-radius: 10px;
+  }
+}

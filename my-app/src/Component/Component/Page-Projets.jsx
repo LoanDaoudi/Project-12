@@ -44,7 +44,7 @@ const PageProjet = () => {
       subtitle: 'Réserver et manger en deux clics',
       text: 'Plongez dans une expérience culinaire réinventée avec OhmyFood, la plateforme ultime pour les gourmets et les restaurateurs. Conçu avec une attention particulière aux détails, notre site, élaboré en HTML/CSS, allie fonctionnalité et esthétique.',
       link: '/projets/2',
-      detailedDescription:'',
+      detailedDescription:'Le projet Ohmyfood est une application innovante qui sert de plateforme double face, facilitant non seulement la réservation de repas par les clients, mais également la création de nouveaux menus par les restaurateurs. Cette application dynamique a été une opportunité idéale pour moi d explorer et de maitriser l utilisation de Sass pour la première fois, ce qui m a permis de développer des compétences supplémentaires dans la gestion de styles complexes et la création d une interface utilisateur plus interactive et attrayante.',
       logos: [CssLogo, HtmlLogo, GitLogo, GithubLogo, SassLogo],
     },
 
@@ -55,7 +55,7 @@ const PageProjet = () => {
       subtitle: 'Animation Javascript et Référencement',
       text: 'Découvrez une plateforme dynamique, animée par la puissance du JavaScript, offrant à ses utilisateurs une expérience fluide, interactive et réactive. Print it ! ne se contente pas de vous offrir un site élégant : nous avons également mis l accent sur une visibilité inégalée sur le web.',
       link: '/projets/3',
-      detailedDescription:'',
+      detailedDescription:'Le projet Prinit marque mes premiers pas significatifs dans l univers de la programmation JavaScript, une étape cruciale dans mon parcours de développement de compétences en codage. Avec une attention particulière sur la création d un carrousel interactif, ce projet m a permis de me plonger profondément dans les nuances du langage JavaScript, d apprendre et d appliquer des concepts fondamentaux pour construire une fonctionnalité visuellement attrayante et fonctionnelle qui enrichit l expérience utilisateur sur le site.',
       logos: [CssLogo, HtmlLogo, GitLogo, GithubLogo, JsLogo, JqueryLogo],
     },
 
@@ -66,7 +66,7 @@ const PageProjet = () => {
       subtitle: 'Animations qui donne vie à un site',
       text: 'Entrez dans un monde numérique où chaque pixel s anime, chaque détail prend vie. Sur Kasa, nous repoussons les limites de ce qu un design web peut accomplir, grâce à une utilisation audacieuse et créative des animations CSS.',
       link: '/projets/4',
-      detailedDescription:'',
+      detailedDescription:'Le projet Kasa a été une étape importante dans mon parcours de développeur, marquant ma première incursion dans l utilisation de React et, par conséquent, l intégration de ses composants dynamiques dans le développement d applications. Cette expérience a été amplifiée par la création de menus à sélection innovants et l exploration d animations CSS plus avancées qui ont permis d offrir une interface utilisateur riche et interactive. À travers ce projet, j ai pu non seulement élargir mon répertoire de compétences techniques mais également repousser les limites de ce que je pouvais accomplir en termes de design et de fonctionnalités web.',
       logos: [CssLogo, HtmlLogo, GitLogo, GithubLogo, JsLogo, JqueryLogo, SassLogo, ReactLogo, MongoLogo, PostmanLogo, NodeLogo],
     },
 
@@ -77,7 +77,7 @@ const PageProjet = () => {
       subtitle: 'Développement d un Portfolio',
       text: 'Découvrez une présentation professionnelle qui transcende le digital. Conçu exclusivement avec React, ce portfolio offre une expérience utilisateur fluide et réactive, reflétant le dynamisme et la passion du client pour son métier.',
       link: '/projets/5',
-      detailedDescription:'',
+      detailedDescription:'Le projet Nina Carducci a représenté un défi stimulant où j ai eu l occasion de travailler étroitement avec une cliente pour améliorer et optimiser son portfolio existant. Les principaux axes d intervention ont été l amélioration de l accessibilité du site, en garantissant une navigation fluide et intuitive pour tous les utilisateurs, ainsi que la formulation de propositions de développement pour les phases futures du projet. Cette collaboration m a permis de mettre en avant mes compétences en matière de conseil et d adaptation, tout en contribuant à façonner un produit digital qui non seulement répond aux besoins immédiats de la cliente, mais qui est également prêt pour les opportunités de croissance et d expansion futures.',
       logos: [CssLogo, HtmlLogo, GitLogo, GithubLogo, JsLogo, JqueryLogo, SassLogo, ReactLogo, MongoLogo, PostmanLogo, NodeLogo],
     },
   ];
@@ -100,7 +100,7 @@ if (!project) {
           <img src={project.image} alt={project.title} className="project-image" />
           <div className='project-description'>
           <h1>{project.title}</h1>
-          <p className="">{project.detailedDescription}</p>
+          <p >{project.detailedDescription}</p>
           <div className='logo'>
           {project.logos.map((logoUrl, index) => (
             <img key={index} src={logoUrl} alt="Logo" className="project-logo" />

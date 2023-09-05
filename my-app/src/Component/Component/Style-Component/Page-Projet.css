@@ -2,20 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Assurez-vous que cela prenne au moins la hauteur de la fenêtre */
+    justify-content: space-evenly;
+    min-height: 100vh;
 }
 
 .title-header {
     background-color: black;
     width: 60%;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 120px 0;
-    margin-top: 150px;
     border-radius: 35px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
 }
 
 h1, h2 {
@@ -45,7 +47,6 @@ h2 {
     display: flex;
     width: 80%;
     height: auto;
-    margin-bottom: 50px;
     border-top-left-radius: 10px;  /* ou la valeur que vous voulez */
     border-bottom-left-radius: 10px;
 }
@@ -74,6 +75,10 @@ h2 {
     border-bottom-right-radius: 25px;
 }
 
+.project-description p {
+    padding: 20px;
+}
+
 .project-logos {
     display: flex;
     justify-content: center;
@@ -84,7 +89,8 @@ h2 {
 
 .project-logo {
     width: 50px;
-    height: auto;
+    height: 50px;
+    object-fit: cover;
 }
 
 .Footer {
@@ -97,4 +103,135 @@ h2 {
     display:flex ;
     flex-direction: column;
     
+}
+
+/* Styles pour écran de PC classique (1024px) */
+@media (max-width: 1024px) {
+    .title-header {
+        width: 80%;
+        padding: 60px 0;
+        margin-top: 250px;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    .project-image, .project-description {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-description {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .project-logos {
+        gap: 10px;
+    }
+
+    .project-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Styles pour tablette (768px) */
+@media (max-width: 768px) {
+    .title-header {
+        width: 90%;
+        padding: 50px 0;
+        margin-top: 140px;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .project-image, .project-description {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-description {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .project-logos {
+        gap: 10px;
+    }
+
+    .project-logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Styles pour téléphone (320px à 425px) */
+@media (max-width: 425px) {
+    .title-header {
+        width: 100%;
+        padding: 30px 0;
+        margin-top: 150px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .project-image, .project-description {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-description {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .project-logos {
+        gap: 5px;
+    }
+
+    .project-logo {
+        width: 30px;
+        height: 30px;
+    }
 }
