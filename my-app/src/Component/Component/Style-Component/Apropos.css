@@ -52,3 +52,85 @@
     justify-content: space-around;
     align-items: center; 
   }
+
+
+  /* Pour PC Classique (1024px) */
+@media (max-width: 1024px) {
+  .Presentation {
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 150px;
+  }
+
+  .ProfilePicture img {
+    min-width: 50%;
+    max-width: 60%;
+  }
+
+  .Presentation h1 {
+    font-size: 2.5rem;
+  }
+
+  .Descriptif {
+    width: 150%;
+    padding-left: 2%;
+  }
+
+  .Button-div {
+    padding-top: 40px;
+    gap: 50px;
+  }
+}
+
+/* Pour Tablette (768px) */
+@media (max-width: 768px) {
+  .Presentation {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .ProfilePicture img {
+    min-width: 50%;
+    max-width: 55%;
+  }
+
+  .Presentation h1 {
+    font-size: 2rem;
+  }
+
+  .Descriptif {
+    width: 130%;
+    padding-left: 1.5%;
+  }
+
+  .Button-div {
+    padding-top: 30px;
+  }
+}
+
+/* Pour Téléphone (320px à 425px) */
+@media (max-width: 425px) {
+  .Presentation {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5%;
+  }
+
+  .ProfilePicture img {
+   display: none;
+  }
+
+  .Presentation h1 {
+    font-size: 1.5rem;
+  }
+
+  .Descriptif {
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .Button-div {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+}

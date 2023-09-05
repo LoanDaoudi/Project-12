@@ -31,7 +31,7 @@
     text-decoration: none;
   }
   .carousel-title {
-    font-size: 3.5rem;   
+    font-size: 2vw;   
     text-align: left;  
     z-index: 15;
     opacity: 1;
@@ -40,7 +40,7 @@
 }
 
 .carousel-subtitle {
-  font-size: 1.5rem;   
+  font-size: 1.5vw;   
   text-align: left;    
   margin-bottom: 0px; 
   z-index: 15;
@@ -55,6 +55,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
     color: white;
     z-index: 15;
 }
@@ -64,7 +65,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    font-size: 25px; 
+    font-size: 1.25vw;  
     z-index: 15;
     color: #e486a6; 
 }
@@ -163,4 +164,138 @@
   }
 
 
- 
+ /* Responsive Design pour PC Classique (1024px) */
+@media (max-width: 1024px) {
+  .Caroussel {
+    max-width: 90vw;
+    height: 40vh;
+  }
+
+  .SlideConent {
+    width: 35%;
+    padding: 15px;
+  }
+
+  .carousel-title {
+    font-size: 2.5vw; 
+  }
+
+  .carousel-subtitle {
+    font-size: 2vw;  
+  }
+
+  .carousel-text {
+    font-size: 1.5vw;  
+  }
+
+  .carousel-inner-link {
+    font-size: 1.75vw;  
+  }
+
+  .material-symbols-outlined {
+    font-size: 30px;
+  }
+
+  .Caroussel img {
+    min-height: 800px;
+  }
+
+  .Arrow-left, .Arrow-right {
+    font-size: 45px;
+  }
+
+  .cercle-carousel {
+    font-size: 20px;
+  }
+}
+
+/* Responsive Design pour Tablette (768px) */
+@media (max-width: 768px) {
+  .Caroussel {
+    max-width: 100vw;
+    height: 30vh;
+  }
+
+  .SlideConent {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .carousel-title {
+    font-size: 3vw; 
+  }
+
+  .carousel-subtitle {
+    font-size: 2.5vw;  
+  }
+
+  .carousel-text {
+    font-size: 2vw;  
+  }
+
+  .carousel-inner-link {
+    font-size: 2.5vw;  
+  }
+
+  .material-symbols-outlined {
+    font-size: 25px;
+  }
+
+  .Caroussel img {
+    min-height: 600px;
+  }
+
+  .Arrow-left, .Arrow-right {
+    font-size: 35px;
+  }
+
+  .cercle-carousel {
+    font-size: 18px;
+  }
+}
+
+/* Responsive Design pour Téléphone (320px à 425px) */
+@media (max-width: 425px) {
+  .Caroussel {
+    height: 25vh;
+  }
+
+  .SlideConent {
+    width: 40%;
+    padding: 5px;
+  }
+
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .carousel-text {
+    max-width: 65%;
+    font-size: 0.7rem;
+    margin-left: 10px;
+  }
+
+  .carousel-inner-link {
+    font-size: 0.9rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 20px;
+  }
+
+  .Caroussel img {
+    min-height: 400px;
+  }
+
+  .Arrow-left, .Arrow-right {
+    font-size: 25px;
+  }
+
+  .cercle-carousel {
+    font-size: 16px;
+  }
+}

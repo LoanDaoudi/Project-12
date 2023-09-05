@@ -30,7 +30,7 @@ const Accueil = () => {
       image: Image2,
       title: 'Ohmyfood',
       subtitle: 'Réserver et manger en deux clics',
-      text: 'Plongez dans une expérience culinaire réinventée avec OhmyFood, la plateforme ultime pour les gourmets et les restaurateurs. Conçu avec une attention particulière aux détails, notre site, élaboré en HTML/CSS, allie fonctionnalité et esthétique.',
+      text: 'Plongez dans une expérience culinaire réinventée avec OhmyFood. Conçu avec une attention particulière aux détails, notre site, élaboré en HTML/CSS, allie fonctionnalité et esthétique.',
       link: '/projets/2'
     },
 
@@ -39,7 +39,7 @@ const Accueil = () => {
       image: Image3,
       title: 'Print it !',
       subtitle: 'Animation Javascript et Référencement',
-      text: 'Découvrez une plateforme dynamique, animée par la puissance du JavaScript, offrant à ses utilisateurs une expérience fluide, interactive et réactive. Print it ! ne se contente pas de vous offrir un site élégant : nous avons également mis l accent sur une visibilité inégalée sur le web.',
+      text: 'Explorez une plateforme dynamique, offrant une expérience fluide et interactive. Chez Print it !, nous  mettont l accent sur une visibilité exceptionnelle sur le web.',
       link: '/projets/3'
     },
 
@@ -48,7 +48,7 @@ const Accueil = () => {
       image: Image4,
       title: 'Kasa',
       subtitle: 'Animations qui donne vie à un site',
-      text: 'Entrez dans un monde numérique où chaque pixel s anime, chaque détail prend vie. Sur Kasa, nous repoussons les limites de ce qu un design web peut accomplir, grâce à une utilisation audacieuse et créative des animations CSS.',
+      text: ' Sur Kasa, nous repoussons les limites de ce qu un design web peut accomplir, grâce à une utilisation audacieuse et créative des animations CSS.',
       link: '/projets/4'
     },
 
@@ -57,7 +57,7 @@ const Accueil = () => {
       image: Image5,
       title: 'Nica Carducci',
       subtitle: 'Développement d un Portfolio',
-      text: 'Découvrez une présentation professionnelle qui transcende le digital. Conçu exclusivement avec React, ce portfolio offre une expérience utilisateur fluide et réactive, reflétant le dynamisme et la passion du client pour son métier.',
+      text: ' Conçu exclusivement avec React, ce portfolio offre une expérience utilisateur fluide et réactive, reflétant le dynamisme et la passion du client pour son métier.',
       link: '/projets/5'
     },
   ];

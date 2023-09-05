@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
+    
 }
 
 h3 {
@@ -26,6 +26,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .category {
@@ -40,6 +41,7 @@ h3 {
     background: transparent;
     border: 2px dotted #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1;  
 }
 
 .category:hover {
@@ -78,6 +80,8 @@ h3 {
     transform: translate(80%, -120%) scale(0.9);
 }
 
+
+
 .category.tools:hover {
     transform: translate(-50%, -25%) scale(0.9);
 }
@@ -87,7 +91,7 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;  
-    z-index: 1;
+    z-index: 2;
     font-family: 'Lora', sans-serif;
 }
     
@@ -118,7 +122,7 @@ h3 {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    z-index: 5;
+    z-index: 3;
 }
 
 #ReactLogo, #ReactJs, #ReactHtml, #ReactCss, #ReactSass, #ReactNode, #ReactGithub, #ReactGit, #SqlLogo, #MongoLogo, #PostmanLogo, #NetlifyLogo, #JqueryLogo {
@@ -201,6 +205,7 @@ h3 {
     left: 50%;
     top: 50%;
     transform: translate(-175%, -120%); 
+    z-index: 1;
 }
 
 .category.front-end::after {
@@ -212,7 +217,8 @@ h3 {
     top: 50%;
     left: 50%;
     opacity: 0;
-    animation: moveLine 2s  forwards infinite; /* Utilisation de l'animation moveLine */
+    animation: moveLine 2s  forwards infinite;
+    z-index: 1;
 }
 
 .category.front-end:hover::after {
@@ -324,3 +330,135 @@ h3 {
     }
 }
 
+/* Styles pour écran PC classique (1024px) */
+@media (max-width: 1024px) {
+    .Skills {
+        width: 85%;
+        height: 300px;
+        padding: 30px;
+    }
+    
+    .categories {
+        flex-direction: column;
+        height: auto;
+        margin-top: 200px;
+    }
+
+    .category {
+        
+        width: 200px;
+        height: 200px;
+    }
+
+    .category.tools::after {
+        display: none;
+    }
+
+    .category.back-end::after{
+        display: none;
+    }
+
+    .picture{
+        width: 40px;
+        height: 40px;
+    }
+
+    h3, h4 {
+        visibility: hidden;
+    }
+    
+}
+
+/* Styles pour tablette (768px) */
+@media (max-width: 768px) {
+    .Skills {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .categories {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .category {
+        width: 175px;
+        height: 175px;
+    }
+
+    .picture{
+        width: 38px;
+        height: 38px;
+    }
+    
+   
+}
+
+/* Styles pour téléphone (320px à 425px) */
+@media (max-width: 425px) {
+    .Skills {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        
+    }
+    
+    .categories {
+        flex-direction: column;
+        height: auto;
+        align-items: center; 
+        margin: 0;
+    }
+
+    .category {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px; 
+    }
+
+    .category::before {
+        width: 35px;  
+        height: 35px; 
+    }
+
+  
+    .category.front-end, .category.back-end, .category.tools {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+    
+    
+    .category.front-end::after, .category.back-end::after, .category.tools::after {
+        display: none;
+    }
+
+    .picture {
+        width: 30px;   
+        height: 30px; 
+    }
+
+    
+    #ReactLogo, #ReactNode, #ReactGithub {
+        transform: translate(-50%, -50%) rotate(0deg) translate(50px) rotate(0deg);
+    }
+    #ReactJs, #ReactGit {
+        transform: translate(-50%, -50%) rotate(72deg) translate(50px) rotate(-72deg);
+    }
+    #ReactHtml, #PostmanLogo {
+        transform: translate(-50%, -50%) rotate(144deg) translate(50px) rotate(-144deg);
+    }
+    #ReactCss, #JqueryLogo {
+        transform: translate(-50%, -50%) rotate(216deg) translate(50px) rotate(-216deg);
+    }
+    #ReactSass, #NetlifyLogo {
+        transform: translate(-50%, -50%) rotate(288deg) translate(50px) rotate(-288deg);
+    }
+    #SqlLogo {
+        transform: translate(-50%, -50%) rotate(120deg) translate(50px) rotate(-120deg);
+    }
+    #MongoLogo {
+        transform: translate(-50%, -50%) rotate(240deg) translate(50px) rotate(-240deg);
+    }
+}
