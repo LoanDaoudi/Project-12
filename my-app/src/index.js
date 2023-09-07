@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Acceuil from './Component/Component/Acceuil.jsx';
+import Acceuil from './Component/Component/Acceuil';
 import MatrixBackground from './Component/Component/Matrix';
 import reportWebVitals from './reportWebVitals';
 
