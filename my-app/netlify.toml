@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build"  # Commande pour construire votre application React
+  publish = "build"         # Dossier contenant les fichiers à déployer
