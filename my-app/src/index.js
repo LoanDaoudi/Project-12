@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './index2.css';
 import Acceuil from './Component/Component/Acceuil';
 import MatrixBackground from './Component/Component/Matrix';
 import reportWebVitals from './reportWebVitals';
@@ -11,6 +12,7 @@ root.render(
     <MatrixBackground />
     <Acceuil />
     
+
   </React.StrictMode>
 );
 
