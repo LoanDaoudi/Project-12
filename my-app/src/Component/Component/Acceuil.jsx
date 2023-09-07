@@ -69,9 +69,9 @@ const Accueil = () => {
       <div id="a-propos"><Presentation /></div>
       <Carroussel slides={slides}/>
       <div id="services"><MesServices /></div>
-      </div>
       <div id='Skills'> <Skills/> </div>
       <div><Projets /></div>
+      </div>
       <div className='Footer-poisition'>
       <div id="contact"><Footer /></div>
       </div>

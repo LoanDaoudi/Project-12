@@ -10,7 +10,7 @@ body{
 
 
 .Main{
-    height: 80%;
+    height: 100%;
     padding-bottom: 60px;
     box-sizing: border-box;
     flex: 1;
@@ -57,3 +57,9 @@ body{
   
 }
 
+
+@media (max-width: 425px) {
+  .Main{
+    padding: 10px;
+  }
+}

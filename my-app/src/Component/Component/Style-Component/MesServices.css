@@ -1,66 +1,155 @@
 .MesServices{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-  }
-  
-  .MesServices h3 {
-    font-size: 2.5rem; /* Increase font size */
-    align-self: flex-start; 
-    margin-left: 15%; 
-    margin-bottom: 30px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
 }
-  
-  .MesServices-Carre{
-    display: flex;
-    gap: 20px;
-  }
-  
-  
-  .CarrePresentation{
+
+.MesServices h3 {
+  font-size: 2.5rem;
+  align-self: flex-start; 
+  margin-left: 15%; 
+  margin-bottom: 30px; 
+}
+
+.MesServices-Carre{
+  display: flex;
+  gap: 20px;
+}
+
+.CarrePresentation{
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 60px;
+  width: 25%;
+  height: auto; 
+  min-height: 14vh; 
+  padding: 10px 20px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: white;
+  transition: background-color 0.3s, border 0.3s ;
+}
+
+.CarrePresentation:hover{
+  background-color: black;
+  color: white;
+}
+
+.CarrePresentation h4 {
+  margin: 10px 0; 
+  font-size: 1.2rem; 
+}
+
+.CarrePresentation p {
+  margin: 5px 0; 
+  font-size: 1rem;
+  max-width: 90%; 
+  align-self: center;
+  white-space: normal; 
+  word-wrap: break-word; 
+  margin: 5px 0 10px 0;
+}
+
+.icon-carre{
+  font-size: 90px;
+  color: #e486a6;
+  margin: 10px 0;
+  margin-bottom: 15px;
+}
+
+/* Écran de PC classique (1024px) */
+@media (max-width: 1024px) {
+  .MesServices{
+    width: 90%;
     margin: auto;
-    border: 3px solid black;
-    border-radius: 60px;
-    width: 25%;
-    height: auto; 
-    min-height: 14vh; 
-    padding: 10px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    background-color: white;
-  
-    transition: background-color 0.3s, border 0.3s ;
   }
-  
-  .CarrePresentation:hover{
-    background-color: black;
-    color: white;
+  .MesServices h3 {
+      font-size: 2rem;
   }
-  
+
+  .CarrePresentation {
+      width: 45%;
+      min-height: 16vh;
+  }
+
   .CarrePresentation h4 {
-    margin: 10px 0; 
-    font-size: 1.2rem; 
+      font-size: 1rem;
   }
-  
+
   .CarrePresentation p {
-    margin: 5px 0; 
-    font-size: 1rem;
-    max-width: 90%; 
-    align-self: center;
-    white-space: normal; 
-    word-wrap: break-word; 
-    margin: 5px 0 10px 0;
+      font-size: 0.9rem;
   }
-  
-  .icon-carre{
-    font-size: 90px;
-    color: #e486a6;
-    margin: 10px 0;
-    margin-bottom: 15px;
+
+  .icon-carre {
+      font-size: 70px;
   }
+}
+
+/* Tablettes (768px) */
+@media (max-width: 768px) {
+  .MesServices{
+    width: 90%;
+    margin: auto;
+  }
+
+  .MesServices h3 {
+      font-size: 1.5rem;
+      margin-left: 10%;
+  }
+
+  .CarrePresentation {
+      width: 100%;
+      min-height: 18vh;
+  }
+
+  .CarrePresentation h4 {
+      font-size: 0.9rem;
+  }
+
+  .CarrePresentation p {
+      font-size: 0.85rem;
+  }
+
+  .icon-carre {
+      font-size: 60px;
+  }
+}
+
+/* Téléphones (320px à 425px) */
+@media (max-width: 425px) {
+  .MesServices h3 {
+      font-size: 1.2rem;
+      margin-left: 5%;
+  }
+
+  .MesServices-Carre{
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .CarrePresentation {
+      width: 45%;
+      border-radius: 30px;
+      margin-bottom: 15px;
+  }
+
+  .CarrePresentation h4 {
+      font-size: 0.8rem;
+  }
+
+  .CarrePresentation p {
+      font-size: 0.8rem;
+  }
+
+  .icon-carre {
+      font-size: 50px;
+  }
+}

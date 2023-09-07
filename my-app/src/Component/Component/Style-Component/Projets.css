@@ -1,16 +1,16 @@
 .projets-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
     width: 100%;
-    justify-items: center;
+    height: auto;
     margin-top: 50px;
     z-index: 5;
-    
 }
 
 .Projets {
-    width: 60%;
+    width: 40%;
     height: auto;
     margin: auto;
     border-radius: 25px;
@@ -25,13 +25,14 @@
 
 
 .Projet-item {
-    width: 45%; 
-    height: 85%;
+    width: 35%; 
+    height: 55%;
     position: relative;
     overflow: hidden;
     background-color: white;
     border-radius: 15%;
-    margin-bottom: 15%;
+
+    margin-bottom: 15px;
     cursor: pointer;
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -62,16 +63,21 @@
 
 }
 
+.projet-content p{
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 .Projet-item h2  {
     position: relative; 
-    bottom: 0;  
+    bottom: 10px;  
     left: 0;    
     color: #e486a6;  
     background-color: rgba(0, 0, 0, 0.5); 
     font-family: 'Tilt Prism', sans-serif;
     font-size: 2rem;
     width: 100%;
-    
     height: 65px;
     padding-left: 15px;
     transition: transform 0.5s ease-in-out; 
@@ -104,7 +110,6 @@
 
 .Projet-item .projet-content p,
 .Projet-item .projet-content a {
-    margin: 10px 0;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; /* Réduit à 0.2s pour une transition plus rapide */
@@ -117,7 +122,7 @@
 }
 
 .Projet-item .projet-content p {
-    font-size: 0.9rem; /* Réduit la taille du texte. Ajustez selon vos préférences. */
+    font-size: 0.8rem; /* Réduit la taille du texte. Ajustez selon vos préférences. */
 
 }
 
@@ -134,3 +139,100 @@
 }
 
 
+.projets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    z-index: 5;
+}
+
+.Projets {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border-radius: 25px;
+    background-color: white;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+/* ... (le reste de vos styles initiaux) ... */
+
+/* Styles pour écran de PC classique (1024px) */
+@media (max-width: 1024px) {
+    .Projets {
+        width: 60%;
+    }
+
+    .Projet-item {
+        width: 50%;
+        height: 60%;
+    }
+
+    .Projet-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .Projet-item .projet-content p {
+        font-size: 0.75rem;
+    }
+
+    .Projet-item .projet-content a {
+        font-size: 1rem;
+    }
+}
+
+/* Styles pour tablette (768px) */
+@media (max-width: 768px) {
+    .Projets {
+        width: 80%;
+    }
+
+    .Projet-item {
+        width: 70%;
+        height: 65%;
+    }
+
+    .Projet-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .Projet-item .projet-content p {
+        font-size: 0.7rem;
+    }
+
+    .Projet-item .projet-content a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Styles pour téléphone (320px à 425px) */
+@media (max-width: 425px) {
+    .Projets {
+        width: 90%;
+    }
+
+    .Projet-item {
+        width: 100%;
+        height: 70%;
+    }
+
+    .Projet-item h2 {
+        font-size: 1rem;
+    }
+
+    .Projet-item .projet-content p {
+        font-size: 0.6rem;
+    }
+
+    .Projet-item .projet-content a {
+        font-size: 0.8rem;
+    }
+}
