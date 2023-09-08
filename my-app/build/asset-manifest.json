@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Project-12/static/css/main.3e80040d.css",
+    "main.js": "/Project-12/static/js/main.0995b9f5.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Project-12/static/js/787.28cb0dcd.chunk.js",
+    "static/media/CarouselProjet3.png": "/Project-12/static/media/CarouselProjet3.35bc2569c6f8ee28f870.png",
+    "static/media/CarouselProjet4.png": "/Project-12/static/media/CarouselProjet4.8b067d503590aa6e3de8.png",
+    "static/media/CarouselProjet5.png": "/Project-12/static/media/CarouselProjet5.7d37be1d830ef055c767.png",
+    "static/media/CarouselProjet1.png": "/Project-12/static/media/CarouselProjet1.e57c50ebd86df776d457.png",
+    "static/media/CarouselProjet2.png": "/Project-12/static/media/CarouselProjet2.3cab62a08a803ab7524f.png",
+    "static/media/ProfilePicture.jpg": "/Project-12/static/media/ProfilePicture.cfc4bfb901ee5ff1b170.jpg",
+    "static/media/netlify-logopng.png": "/Project-12/static/media/netlify-logopng.603ef81c872f9df8c343.png",
+    "static/media/PostmanLogo.png": "/Project-12/static/media/PostmanLogo.222f64891a46d9de0238.png",
+    "static/media/Sasslogo.png": "/Project-12/static/media/Sasslogo.4f3c022cc764b9e30eb0.png",
+    "static/media/NodeLogopng.png": "/Project-12/static/media/NodeLogopng.fe288d3a7918cf462ee1.png",
+    "static/media/ReactLogo.png": "/Project-12/static/media/ReactLogo.cb383f7be127b0183272.png",
+    "static/media/jquery-logo.png": "/Project-12/static/media/jquery-logo.a52db66b54dd7c5e8645.png",
+    "static/media/HtmlLogo.png": "/Project-12/static/media/HtmlLogo.c408205b8f6711363a5f.png",
+    "static/media/mongodb-logo.png": "/Project-12/static/media/mongodb-logo.e1a25fc739153a74508a.png",
+    "static/media/SqlLogo.png": "/Project-12/static/media/SqlLogo.b9a057136cab97fc319f.png",
+    "static/media/GitHub-Logo.png": "/Project-12/static/media/GitHub-Logo.a47c9923394d30256364.png",
+    "static/media/Csslogo.png": "/Project-12/static/media/Csslogo.6104fd00dc531636f685.png",
+    "static/media/Logo.PNG": "/Project-12/static/media/Logo.20594bb723a99194ab6b.PNG",
+    "index.html": "/Project-12/index.html",
+    "main.3e80040d.css.map": "/Project-12/static/css/main.3e80040d.css.map",
+    "main.0995b9f5.js.map": "/Project-12/static/js/main.0995b9f5.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Project-12/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e80040d.css",
+    "static/js/main.0995b9f5.js"
+  ]
+}
