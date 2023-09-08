@@ -27,7 +27,7 @@ const Menu = () => {
                         <FontAwesomeIcon icon={faTimes} />
                     </div>
                     <ul>
-                    <li><Link to="/">Accueil</Link></li>
+                    <li><Link to="/Project-12">Accueil</Link></li>
                         <li><a href="#a-propos">A Propos</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#Skills">Compétences</a></li>
