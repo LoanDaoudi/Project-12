@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Image1 from "./Images/CarouselProjet1.png";
 import Image2 from "./Images/CarouselProjet2.png";
 import Image3 from "./Images/CarouselProjet3.png";
@@ -92,6 +93,7 @@ if (!project) {
       <div>
       <div className="project-page">
         <Header/>
+        <Link to="/Project-12" className='return-link'>Retour à l'accueil</Link>
         <div className='title-header'>
           <h1>{project.title}</h1>
           <h2>{project.subtitle}</h2>

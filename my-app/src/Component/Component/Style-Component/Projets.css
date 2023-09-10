@@ -192,8 +192,9 @@
 /* Styles pour tablette (768px) */
 @media (max-width: 768px) {
     .Projets {
-        width: 80%;
+        width: 90%;
     }
+
 
     .Projet-item {
         width: 70%;
@@ -216,11 +217,11 @@
 /* Styles pour téléphone (320px à 425px) */
 @media (max-width: 425px) {
     .Projets {
-        width: 90%;
+        width: 100%;
     }
 
     .Projet-item {
-        width: 100%;
+        width: 92%;
         height: 70%;
     }
 

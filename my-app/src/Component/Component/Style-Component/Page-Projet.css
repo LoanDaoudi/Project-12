@@ -51,6 +51,26 @@ h2 {
     border-bottom-left-radius: 10px;
 }
 
+.return-link{
+
+        position: fixed;
+        background-color: white;
+        width: 250px;
+        height: auto;
+        margin: auto;
+        padding: 25px;
+        left: 0;
+        margin-bottom: 1190px;
+        font-family: 'Lora', sans-serif;
+        font-size: 1.3rem; 
+        text-decoration: none; 
+        color: #e486a6; 
+        font-weight: 700;
+        border-radius: 25px;
+        z-index: 10;
+
+}
+
 .project-image {
     width: 66%;
     height: auto;
@@ -147,6 +167,12 @@ h2 {
         width: 40px;
         height: 40px;
     }
+    .return-link {
+        width: 120px;
+        padding: 20px;
+        font-size: 1.2rem;
+        margin-top: -460px;
+      }
 }
 
 /* Styles pour tablette (768px) */
@@ -190,6 +216,8 @@ h2 {
         width: 35px;
         height: 35px;
     }
+    
+  
 }
 
 /* Styles pour téléphone (320px à 425px) */

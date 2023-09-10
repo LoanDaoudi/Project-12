@@ -212,29 +212,34 @@
 /* Responsive Design pour Tablette (768px) */
 @media (max-width: 768px) {
   .Caroussel {
-    max-width: 100vw;
+    max-width: 90%;
     height: 30vh;
   }
 
   .SlideConent {
     width: 30%;
     padding: 10px;
+    background-color: transparent;
+  
   }
 
   .carousel-title {
+    text-align: right;
     font-size: 3vw; 
+    
   }
 
   .carousel-subtitle {
-    font-size: 2.5vw;  
+    display: none; 
   }
 
   .carousel-text {
-    font-size: 2vw;  
+    display: none;  
   }
 
   .carousel-inner-link {
     font-size: 2.5vw;  
+
   }
 
   .material-symbols-outlined {
