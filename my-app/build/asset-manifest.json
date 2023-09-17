@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Project-12/static/css/main.3e80040d.css",
-    "main.js": "/Project-12/static/js/main.2b8c3975.js",
+    "main.css": "/Project-12/static/css/main.d181a3d9.css",
+    "main.js": "/Project-12/static/js/main.7334faca.js",
     "static/js/787.28cb0dcd.chunk.js": "/Project-12/static/js/787.28cb0dcd.chunk.js",
     "static/media/CarouselProjet3.png": "/Project-12/static/media/CarouselProjet3.35bc2569c6f8ee28f870.png",
     "static/media/CarouselProjet4.png": "/Project-12/static/media/CarouselProjet4.8b067d503590aa6e3de8.png",
@@ -22,12 +22,12 @@
     "static/media/Csslogo.png": "/Project-12/static/media/Csslogo.6104fd00dc531636f685.png",
     "static/media/Logo.PNG": "/Project-12/static/media/Logo.20594bb723a99194ab6b.PNG",
     "index.html": "/Project-12/index.html",
-    "main.3e80040d.css.map": "/Project-12/static/css/main.3e80040d.css.map",
-    "main.2b8c3975.js.map": "/Project-12/static/js/main.2b8c3975.js.map",
+    "main.d181a3d9.css.map": "/Project-12/static/css/main.d181a3d9.css.map",
+    "main.7334faca.js.map": "/Project-12/static/js/main.7334faca.js.map",
     "787.28cb0dcd.chunk.js.map": "/Project-12/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e80040d.css",
-    "static/js/main.2b8c3975.js"
+    "static/css/main.d181a3d9.css",
+    "static/js/main.7334faca.js"
   ]
 }

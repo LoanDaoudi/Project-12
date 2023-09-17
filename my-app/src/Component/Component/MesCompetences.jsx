@@ -16,6 +16,7 @@ import './Style-Component/Skills.css'
 
 const Skills = () => {
     return (
+
         <div className="Skills">
             <h3>Mes compétences :</h3>
             
@@ -54,6 +55,8 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            
+
         </div>
     );
 };

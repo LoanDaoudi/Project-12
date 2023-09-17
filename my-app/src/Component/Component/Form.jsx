@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import Button from "./Button";
+import cvPdf from './CV de Loan Daoudi.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from '@fortawesome/free-regular-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Form = () => {
     const emailRef = useRef(null);
@@ -17,10 +19,18 @@ const Form = () => {
         alert("Email copié !");
     };
 
+    const downloadCV = () => {
+        const a = document.createElement('a');
+        a.href = cvPdf; 
+        a.download = 'CV de Loan Daoudi.pdf'; 
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Ici, vous pouvez ajouter une logique pour envoyer l'email à votre adresse
-        // Par exemple en utilisant un service comme SendGrid, Mailgun ou autre.
         alert("Message envoyé !");
     };
 
@@ -30,6 +40,10 @@ const Form = () => {
             <div className="Email-onclick" onClick={copyEmailToClipboard} ref={emailRef} style={{ padding: "5px", cursor: "pointer"}}>
                 <p>loanmateo.daoudi@gmail.com</p>
                 <FontAwesomeIcon icon={faCopy} className="logo-copy" />
+            </div>
+            <div className="Email-onclick" onClick={downloadCV} style={{ padding: "5px", cursor: "pointer"}}>
+                <p>Télécharger mon CV </p>
+                <FontAwesomeIcon icon={faDownload} className="logo-copy" />
             </div>
             <form onSubmit={handleSubmit}>
                 <input type="email" placeholder="Votre email" required />

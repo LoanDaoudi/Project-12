@@ -8,7 +8,7 @@ const Descriptif = () => {
         <div className="Descriptif">
             <h1>Loan Daoudi</h1>
             <h4>Développeur Front-end</h4>
-            <p>Je suis passionné par le développement front-end et le web design, étant sensibilisé à l'expérience utilisateur et l'accessibilité, je développe des projets centré autour de l'Humain.
+            <p>Je suis passionné par le développement front-end et le web design, étant sensibilisé à l'expérience utilisateur et l'accessibilité, je développe des projets centrés autour de l'Humain.
 
 De plus, je suis intéressé par le monde de l'open-source, je suis contributeur de plusieurs projets et je suis en parallèle attiré par l'enseignement (talks, articles, mentoring).
             </p>

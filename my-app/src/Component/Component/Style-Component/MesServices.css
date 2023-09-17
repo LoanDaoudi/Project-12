@@ -24,8 +24,7 @@
   border: 3px solid black;
   border-radius: 60px;
   width: 25%;
-  height: auto; 
-  min-height: 14vh; 
+  height: 255px;
   padding: 10px 20px;
   flex: 1;
   display: flex;

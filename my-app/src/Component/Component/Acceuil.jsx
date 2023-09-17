@@ -5,6 +5,7 @@ import Carroussel from './Carroussel';
 import Footer from './Footer';
 import MesServices from './MesServics';
 import Skills from './MesCompetences';
+import NameofSkills from './NameofSkills';
 import Projets from './Projets';
 import Image1 from "./Images/CarouselProjet1.png";
 import Image2 from "./Images/CarouselProjet2.png";
@@ -70,6 +71,7 @@ const Accueil = () => {
       <Carroussel slides={slides}/>
       <div id="services"><MesServices /></div>
       <div id='Skills'> <Skills/> </div>
+      <div><NameofSkills/></div>
       <div><Projets /></div>
       </div>
       <div className='Footer-poisition'>
