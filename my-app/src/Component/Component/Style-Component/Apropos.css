@@ -1,13 +1,73 @@
-.Presentation {
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .Presentation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 60%;
+      height: auto;
+      padding: 2%;   
+      margin: auto;
+      margin-top: 6%;  
+      margin-bottom: 4%; 
+      border-radius: 60px;
+      z-index: 0;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      position: relative;  
+    }
+    
+    .ProfilePicture{
+      width: 25%;
+    }
+    
+    .ProfilePicture img {
+      width: 100%; 
+      height: auto; 
+      object-fit: cover;
+      z-index: 0;
+      border-radius: 45%;
+    
+    }
+    
+    
+    .Presentation h1 {
+      font-size: 3rem;
+      font-family: 'Lora', sans-serif;
+    }
+    
+    .Presentation p {
+      font-style: italic;
+      
+    }
+    
+    .Descriptif {
+      width: 75%;
+      position: relative;
+      z-index: 0;
+      padding-left: 2.5%;
+      font-family: 'Lora', sans-serif;
+    
+    }
+
+    .Button-div {
+      padding-top: 55px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; 
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Presentation {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 60%;
+    width: 75%;
     height: auto;
     padding: 2%;   
     margin: auto;
-    margin-top: 6%;  
+    margin-top: 10%;  
     margin-bottom: 4%; 
     border-radius: 60px;
     z-index: 0;
@@ -25,7 +85,7 @@
     object-fit: cover;
     z-index: 0;
     border-radius: 45%;
-   
+  
   }
   
   
@@ -54,85 +114,253 @@
     justify-content: space-around;
     align-items: center; 
   }
+}
 
-
-  /* Pour PC Classique (1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .Presentation {
-    width: 80%;
-    border-radius: 30px;
-    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 75%;
+    height: auto;
+    padding: 2%;   
+    margin: auto;
+    margin-top: 14%;  
+    margin-bottom: 4%; 
+    border-radius: 60px;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;  
   }
-
+  
+  .ProfilePicture{
+    width: 25%;
+  }
+  
   .ProfilePicture img {
-    min-width: 50%;
-    max-width: 60%;
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 45%;
+  
   }
-
+  
+  
   .Presentation h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: 'Lora', sans-serif;
   }
-
+  
+  .Presentation p {
+    font-style: italic;
+    
+  }
+  
   .Descriptif {
-    width: 150%;
-    padding-left: 2%;
+    width: 75%;
+    position: relative;
+    z-index: 0;
+    padding-left: 2.5%;
+    font-family: 'Lora', sans-serif;
+  
   }
 
   .Button-div {
-    padding-top: 40px;
-    gap: 50px;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
   }
 }
 
-/* Pour Tablette (768px) */
-@media (max-width: 768px) {
+
+@media (min-width: 426px) and (max-width: 768px) {
   .Presentation {
-    width: 90%;
-    border-radius: 20px;
-  }
-
-  .ProfilePicture img {
-    min-width: 50%;
-    max-width: 55%;
-  }
-
-  .Presentation h1 {
-    font-size: 2rem;
-  }
-
-  .Descriptif {
-    width: 130%;
-    padding-left: 1.5%;
-  }
-
-  .Button-div {
-    padding-top: 30px;
-  }
-}
-
-/* Pour Téléphone (320px à 425px) */
-@media (max-width: 425px) {
-  .Presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     width: 100%;
-    border-radius: 10px;
-    padding: 5%;
+    height: auto;
+    padding: 2%;   
+    margin: auto;
+    margin-top: 25%;  
+    margin-bottom: 4%; 
+    border-radius: 60px;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;  
   }
-
+  
+  .ProfilePicture{
+    width: 25%;
+  }
+  
   .ProfilePicture img {
-   display: none;
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 45%;
+  
   }
-
+  
+  
   .Presentation h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-family: 'Lora', sans-serif;
   }
-
+  
+  .Presentation p {
+    font-style: italic;
+    
+  }
+  
   .Descriptif {
-    width: 200%;
-    padding-left: 1%;
+    width: 75%;
+    position: relative;
+    z-index: 0;
+    padding-left: 2.5%;
+    font-family: 'Lora', sans-serif;
+  
   }
 
   .Button-div {
-    padding-top: 20px;
-    flex-direction: column;
+   padding-top: 15px;
+   padding-right: 25px;
+   display: flex;
+   gap: 10px;
+  
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .Presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95%;
+    height: auto;
+    padding: 2%;   
+    margin: auto;
+    margin-top: 25%;  
+    margin-bottom: 4%; 
+    border-radius: 60px;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;  
+  }
+  
+  .ProfilePicture{
+    width: 0%;
+  }
+  
+  .ProfilePicture img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 45%;
+  
+  }
+  
+  
+  .Presentation h1 {
+    font-size: 3rem;
+    font-family: 'Lora', sans-serif;
+  }
+  
+  .Presentation p {
+    font-style: italic;
+    
+  }
+  
+  .Descriptif {
+    width: 75%;
+    position: relative;
+    z-index: 0;
+    padding-left: 2.5%;
+    font-family: 'Lora', sans-serif;
+  
+  }
+
+  .Button-div {
+    padding-top: 55px;
+    display: flex;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .Button{
+    margin-bottom: 10px;
+  }
+}
+
+
+
+@media (max-width: 319px) {
+
+  .Presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95%;
+    height: auto;
+    padding: 2%;   
+    margin: auto;
+    margin-top: 25%;  
+    margin-bottom: 4%; 
+    border-radius: 60px;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;  
+  }
+  
+  .ProfilePicture{
+    width: 0%;
+  }
+  
+  .ProfilePicture img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 45%;
+  
+  }
+  
+  
+  .Presentation h1 {
+    font-size: 3rem;
+    font-family: 'Lora', sans-serif;
+  }
+  
+  .Presentation p {
+    font-style: italic;
+    
+  }
+  
+  .Descriptif {
+    width: 75%;
+    position: relative;
+    z-index: 0;
+    padding-left: 2.5%;
+    font-family: 'Lora', sans-serif;
+  
+  }
+
+  .Button-div {
+    padding-top: 55px;
+    display: flex;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .Button{
+    margin-bottom: 10px;
   }
 }

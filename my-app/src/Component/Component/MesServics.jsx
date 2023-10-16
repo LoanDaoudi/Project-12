@@ -6,11 +6,11 @@ import './Style-Component/MesServices.css'
 const MesServices = () => {
     return(
         <div className="MesServices">
-            <h3>Mes services :</h3>
+            <h3>Aptitudes </h3>
         <div className="MesServices-Carre">
-            <CarrePresentation icon={faDesktop} subtitle="Appliations :" text="Développe des sites vitrines, applications web, mobile ou de bureau." />
-            <CarrePresentation icon={faChartPie} subtitle="Expériences utilisateur :" text="Une expérience fluide et magnifique pour vos clients." />
-            <CarrePresentation icon={faCodeBranch} subtitle="Accessibilité :" text="Développement de site accessible à tous ." />
+            <CarrePresentation icon={faDesktop} subtitle="Applications " text="Développer des sites vitrines, applications web, mobile ou de bureau." />
+            <CarrePresentation icon={faChartPie} subtitle="Expériences utilisateur " text="Favoriser l'intuitivité et la fluidité des interfaces client." />
+            <CarrePresentation icon={faCodeBranch} subtitle="Accessibilité " text="Perceptible par tous, utilisable par tous, compréhensible par tous" />
         </div>
         </div>
     );

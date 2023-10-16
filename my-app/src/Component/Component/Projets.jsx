@@ -61,7 +61,7 @@ const Projets = () => {
 
   return (
     <div className='Projets' id='Projets'>
-
+      <h3>Réalisations</h3>
     <div className="projets-container">
         {slides.map((slide, index) => (
             <ProjetItem key={index} details={slide} isVisible={!selectedCategory || slide.category.includes(selectedCategory)} />

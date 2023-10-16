@@ -1,12 +1,13 @@
 .Skills {
     font-family: 'Arial', sans-serif;
     padding: 40px;
-    width: 60%;    
+    width: 60%; 
+    height: auto;   
     margin: auto;
     margin-top: 85px;
     margin-bottom: 50px;
     background: #f4f4f4;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -15,18 +16,21 @@
 }
 
 h3 {
-    text-align: center;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    align-self: flex-start;
+   
 }
 
 .categories {
     position: relative;
     width: 100%;
-    height: 500px;
+    height:500px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    background: #f4f4f4;
+
 }
 
 .category {
@@ -330,135 +334,3 @@ h3 {
     }
 }
 
-/* Styles pour écran PC classique (1024px) */
-@media (max-width: 1024px) {
-    .Skills {
-        width: 85%;
-        height: 300px;
-        padding: 30px;
-    }
-    
-    .categories {
-        flex-direction: column;
-        height: auto;
-        margin-top: 200px;
-    }
-
-    .category {
-        
-        width: 200px;
-        height: 200px;
-    }
-
-    .category.tools::after {
-        display: none;
-    }
-
-    .category.back-end::after{
-        display: none;
-    }
-
-    .picture{
-        width: 40px;
-        height: 40px;
-    }
-
-    h3, h4 {
-        visibility: hidden;
-    }
-    
-}
-
-/* Styles pour tablette (768px) */
-@media (max-width: 768px) {
-    .Skills {
-        width: 95%;
-        padding: 20px;
-    }
-    
-    .categories {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .category {
-        width: 175px;
-        height: 175px;
-    }
-
-    .picture{
-        width: 38px;
-        height: 38px;
-    }
-    
-   
-}
-
-/* Styles pour téléphone (320px à 425px) */
-@media (max-width: 425px) {
-    .Skills {
-        width: 80%;
-        height: auto;
-        padding: 10px;
-        
-    }
-    
-    .categories {
-        flex-direction: column;
-        height: auto;
-        align-items: center; 
-        margin: 0;
-    }
-
-    .category {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 30px; 
-    }
-
-    .category::before {
-        width: 35px;  
-        height: 35px; 
-    }
-
-  
-    .category.front-end, .category.back-end, .category.tools {
-        position: relative;
-        left: auto;
-        top: auto;
-        transform: none;
-    }
-    
-    
-    .category.front-end::after, .category.back-end::after, .category.tools::after {
-        display: none;
-    }
-
-    .picture {
-        width: 30px;   
-        height: 30px; 
-    }
-
-    
-    #ReactLogo, #ReactNode, #ReactGithub {
-        transform: translate(-50%, -50%) rotate(0deg) translate(50px) rotate(0deg);
-    }
-    #ReactJs, #ReactGit {
-        transform: translate(-50%, -50%) rotate(72deg) translate(50px) rotate(-72deg);
-    }
-    #ReactHtml, #PostmanLogo {
-        transform: translate(-50%, -50%) rotate(144deg) translate(50px) rotate(-144deg);
-    }
-    #ReactCss, #JqueryLogo {
-        transform: translate(-50%, -50%) rotate(216deg) translate(50px) rotate(-216deg);
-    }
-    #ReactSass, #NetlifyLogo {
-        transform: translate(-50%, -50%) rotate(288deg) translate(50px) rotate(-288deg);
-    }
-    #SqlLogo {
-        transform: translate(-50%, -50%) rotate(120deg) translate(50px) rotate(-120deg);
-    }
-    #MongoLogo {
-        transform: translate(-50%, -50%) rotate(240deg) translate(50px) rotate(-240deg);
-    }
-}

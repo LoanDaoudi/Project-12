@@ -1,7 +1,7 @@
 import React from "react";
 import ProfilePicture from "./Profile Picture";
 import Descriptif from "./Descriptif";
-
+import './Style-Component/Apropos.css'
 
 const Presentation = () => {
     return (

@@ -1,10 +1,7 @@
+@media (min-width: 1440px) and (max-width: 2560px){
 .MesServices{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 100%;
+  margin: auto;
+  width: 90%;
 }
 
 .MesServices h3 {
@@ -16,21 +13,19 @@
 
 .MesServices-Carre{
   display: flex;
-  gap: 20px;
+  gap: 33px;
 }
 
 .CarrePresentation{
-  margin: auto;
+  
   border: 3px solid black;
   border-radius: 60px;
-  width: 25%;
-  height: 255px;
+  width: 50px;
+  height: 280px;
   padding: 10px 20px;
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
   background-color: white;
   transition: background-color 0.3s, border 0.3s ;
@@ -63,98 +58,323 @@
   margin-bottom: 15px;
 }
 
-/* Écran de PC classique (1024px) */
-@media (max-width: 1024px) {
-  .MesServices{
-    width: 90%;
-    margin: auto;
-  }
-  .MesServices h3 {
-      font-size: 2rem;
-  }
-
-  .CarrePresentation {
-      width: 45%;
-      min-height: 16vh;
-  }
-
-  .CarrePresentation h4 {
-      font-size: 1rem;
-  }
-
-  .CarrePresentation p {
-      font-size: 0.9rem;
-  }
-
-  .icon-carre {
-      font-size: 70px;
-  }
 }
 
-/* Tablettes (768px) */
-@media (max-width: 768px) {
-  .MesServices{
-    width: 90%;
-    margin: auto;
-  }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .MesServices{
+    margin: auto;
+    width: 90%;
+  }
+  
+  .MesServices h3 {
+    font-size: 2.5rem;
+    align-self: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 30px; 
+  }
+  
   .MesServices-Carre{
+    display: flex;
+    gap: 33px;
+  }
+  
+  .CarrePresentation{
+    
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 50px;
+    height: 280px;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-  .MesServices h3 {
-      font-size: 1.5rem;
-      margin-left: 10%;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s ;
   }
-
-  .CarrePresentation {
-      width: 100%;
-      min-height: 10vh;
+  
+  .CarrePresentation:hover{
+    background-color: black;
+    color: white;
   }
-
+  
   .CarrePresentation h4 {
-      font-size: 0.9rem;
+    margin: 10px 0; 
+    font-size: 1.2rem; 
   }
-
+  
   .CarrePresentation p {
-      font-size: 0.85rem;
+    margin: 5px 0; 
+    font-size: 1rem;
+    max-width: 90%; 
+    align-self: center;
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin: 5px 0 10px 0;
+  }
+  
+  .icon-carre{
+    font-size: 90px;
+    color: #e486a6;
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+  
   }
 
-  .icon-carre {
-      font-size: 60px;
-  }
-}
 
-/* Téléphones (320px à 425px) */
-@media (max-width: 425px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .MesServices{
+    margin: auto;
+    width: 90%;
+  }
+  
   .MesServices h3 {
-      font-size: 1.2rem;
-      margin-left: 5%;
+    font-size: 2.5rem;
+    align-self: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 30px; 
   }
-
+  
   .MesServices-Carre{
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+    display: flex;
+    gap: 33px;
   }
-
-  .CarrePresentation {
-      width: 85%;
-      border-radius: 30px;
-      margin-bottom: 15px;
+  
+  .CarrePresentation{
+    
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 50px;
+    height: 280px;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s ;
   }
-
+  
+  .CarrePresentation:hover{
+    background-color: black;
+    color: white;
+  }
+  
   .CarrePresentation h4 {
-      font-size: 0.8rem;
+    margin: 10px 0; 
+    font-size: 1.1rem; 
   }
-
+  
   .CarrePresentation p {
-      font-size: 0.8rem;
+    margin: 5px 0; 
+    font-size: 0.8rem;
+    max-width: 90%; 
+    align-self: center;
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin: 5px 0 10px 0;
+  }
+  
+  .icon-carre{
+    font-size: 90px;
+    color: #e486a6;
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+  
   }
 
-  .icon-carre {
-      font-size: 50px;
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+  .MesServices{
+    margin: auto;
+    width: 90%;
   }
-}
+  
+  .MesServices h3 {
+    font-size: 2.5rem;
+    align-self: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 30px; 
+  }
+  
+  .MesServices-Carre{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+  
+  .CarrePresentation{
+    
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 100%;
+    height: 280px;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s ;
+  }
+  
+  .CarrePresentation:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .CarrePresentation h4 {
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+  }
+  
+  .CarrePresentation p {
+    margin: 5px 0; 
+    font-size: 0.8rem;
+    max-width: 90%; 
+    align-self: center;
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin: 5px 0 10px 0;
+  }
+  
+  .icon-carre{
+    font-size: 90px;
+    color: #e486a6;
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+  
+  }
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+  .MesServices{
+    margin: auto;
+    width: 90%;
+  }
+  
+  .MesServices h3 {
+    font-size: 2.5rem;
+    align-self: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 30px; 
+  }
+  
+  .MesServices-Carre{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+  
+  .CarrePresentation{
+    
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 100%;
+    height: 280px;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s ;
+  }
+  
+  .CarrePresentation:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .CarrePresentation h4 {
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+  }
+  
+  .CarrePresentation p {
+    margin: 5px 0; 
+    font-size: 1rem;
+    max-width: 90%; 
+    align-self: center;
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin: 5px 0 10px 0;
+  }
+  
+  .icon-carre{
+    font-size: 90px;
+    color: #e486a6;
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+  
+  }
+
+@media (max-width: 319px) {
+
+  .MesServices{
+    margin: auto;
+    width: 90%;
+  }
+  
+  .MesServices h3 {
+    font-size: 2.5rem;
+    align-self: flex-start; 
+    margin-left: 15%; 
+    margin-bottom: 30px; 
+  }
+  
+  .MesServices-Carre{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+  }
+  
+  .CarrePresentation{
+    
+    border: 3px solid black;
+    border-radius: 60px;
+    width: 100%;
+    height: 280px;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s ;
+  }
+  
+  .CarrePresentation:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .CarrePresentation h4 {
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+  }
+  
+  .CarrePresentation p {
+    margin: 5px 0; 
+    font-size: 0.8rem;
+    max-width: 90%; 
+    align-self: center;
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin: 5px 0 10px 0;
+  }
+  
+  .icon-carre{
+    font-size: 90px;
+    color: #e486a6;
+    margin: 10px 0;
+    margin-bottom: 15px;
+  }
+  
+  }

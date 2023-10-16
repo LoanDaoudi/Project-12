@@ -1,3 +1,4 @@
+@media (min-width: 1440px) and (max-width: 2560px){
 .Caroussel {
     position: relative;
     margin: auto;
@@ -162,145 +163,802 @@
       transform: translateX(200vw);  
     }
   }
-
-
- /* Responsive Design pour PC Classique (1024px) */
-@media (max-width: 1024px) {
-  .Caroussel {
-    max-width: 90vw;
-    height: 40vh;
-  }
-
-  .SlideConent {
-    width: 35%;
-    padding: 15px;
-  }
-
-  .carousel-title {
-    font-size: 2.5vw; 
-  }
-
-  .carousel-subtitle {
-    font-size: 2vw;  
-  }
-
-  .carousel-text {
-    font-size: 1.5vw;  
-  }
-
-  .carousel-inner-link {
-    font-size: 1.75vw;  
-  }
-
-  .material-symbols-outlined {
-    font-size: 30px;
-  }
-
-  .Caroussel img {
-    min-height: 800px;
-  }
-
-  .Arrow-left, .Arrow-right {
-    font-size: 45px;
-  }
-
-  .cercle-carousel {
-    font-size: 20px;
-  }
 }
 
-/* Responsive Design pour Tablette (768px) */
-@media (max-width: 768px) {
-  .Caroussel {
-    max-width: 90%;
-    height: 30vh;
-  }
 
-  .SlideConent {
-    width: 30%;
-    padding: 10px;
-    background-color: transparent;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Caroussel {
+    position: relative;
+    margin: auto;
+    max-width: 80vw;
+    border-radius: 35px;
+    height: 35vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   
   }
+  
+  .SlideConent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
+  }
 
+  .SlideConent a {
+    text-decoration: none;
+  }
   .carousel-title {
-    text-align: right;
-    font-size: 3vw; 
-    
-  }
+    font-size: 2vw;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
+}
 
-  .carousel-subtitle {
-    display: none; 
-  }
+.carousel-subtitle {
+  font-size: 1.5vw;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
 
-  .carousel-text {
-    display: none;  
-  }
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
+    color: white;
+    z-index: 15;
+}
 
-  .carousel-inner-link {
-    font-size: 2.5vw;  
+.carousel-inner-link {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;  
+    z-index: 15;
+    color: #e486a6; 
+}
 
-  }
+.material-symbols-outlined {
+  font-size: 35px;
+}
 
-  .material-symbols-outlined {
-    font-size: 25px;
-  }
+
+
 
   .Caroussel img {
-    min-height: 600px;
+    max-width: 100%;
+     min-height: 895px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
   }
 
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
+  
   .Arrow-left, .Arrow-right {
-    font-size: 35px;
+    position: absolute;
+    top: 40%; 
+    transform: translateY(-50%); 
+    font-size: 40px; 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 5px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 5px;
+    z-index: 10;
+  }
+  
+  .cercle-carousel {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
   }
 
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Caroussel {
+    position: relative;
+    margin: auto;
+    max-width: 80vw;
+    border-radius: 35px;
+    height: 25vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+  }
+  
+  .SlideConent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .SlideConent a {
+    text-decoration: none;
+  }
+  .carousel-title {
+    font-size: 2vw;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
+}
+
+.carousel-subtitle {
+  font-size: 1.5vw;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
+
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
+    color: white;
+    z-index: 15;
+}
+
+.carousel-inner-link {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;  
+    z-index: 15;
+    color: #e486a6; 
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+}
+
+
+
+
+  .Caroussel img {
+    max-width: 100%;
+     min-height: 655px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
+  }
+
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
+  
+  .Arrow-left, .Arrow-right {
+    position: absolute;
+    top: 41%; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    font-size: 35px;
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 5px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 5px;
+    z-index: 10;
+  }
+  
   .cercle-carousel {
-    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
   }
 }
 
-/* Responsive Design pour Téléphone (320px à 425px) */
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .Caroussel {
-    height: 25vh;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 95%;
+    border-radius: 35px;
+    height: 15vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
   }
-
+  
   .SlideConent {
-    width: 40%;
-    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
   }
 
+  .SlideConent a {
+    text-decoration: none;
+  }
   .carousel-title {
-    font-size: 1.5rem;
-  }
+    font-size: 2vw;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
+}
 
-  .carousel-subtitle {
-    font-size: 0.8rem;
-  }
+.carousel-subtitle {
+  font-size: 1.5vw;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
 
-  .carousel-text {
-    max-width: 65%;
-    font-size: 0.7rem;
-    margin-left: 10px;
-  }
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
+    color: white;
+    z-index: 15;
+}
 
-  .carousel-inner-link {
-    font-size: 0.9rem;
-  }
+.carousel-inner-link {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;  
+    z-index: 15;
+    color: #e486a6; 
+}
 
-  .material-symbols-outlined {
-    font-size: 20px;
-  }
+.material-symbols-outlined {
+  font-size: 35px;
+}
+
+
+
 
   .Caroussel img {
-    min-height: 400px;
+    max-width: 100%;
+     min-height: 395px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
   }
 
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
+  
   .Arrow-left, .Arrow-right {
+    position: absolute;
+    top:37%; 
+    transform: translateY(-50%); 
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
     font-size: 25px;
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 5px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 5px;
+    z-index: 10;
+  }
+  
+  .cercle-carousel {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .Caroussel {
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 95%;
+    border-radius: 35px;
+    height: 15vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+  }
+  
+  .SlideConent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
   }
 
+  .SlideConent a {
+    text-decoration: none;
+  }
+  .carousel-title {
+    font-size: 2vw;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
+}
+
+.carousel-subtitle {
+  font-size: 1.5vw;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
+
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
+    color: white;
+    z-index: 15;
+}
+
+.carousel-inner-link {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;  
+    z-index: 15;
+    color: #e486a6; 
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+}
+
+
+
+
+  .Caroussel img {
+    max-width: 100%;
+     min-height: 395px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
+  }
+
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
+  
+  .Arrow-left, .Arrow-right {
+    position: absolute;
+    top:35%; 
+    transform: translateY(-50%); 
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    font-size: 20px;
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 5px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 5px;
+    z-index: 10;
+  }
+  
   .cercle-carousel {
-    font-size: 16px;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
+  }
+}
+
+@media (max-width: 319px) {
+  .Caroussel {
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 95%;
+    border-radius: 35px;
+    height: 15vh;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+  }
+  
+  .SlideConent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .SlideConent a {
+    text-decoration: none;
+  }
+  .carousel-title {
+    font-size: 2vw;   
+    text-align: left;  
+    z-index: 15;
+    opacity: 1;
+    color: #e486a6; 
+    font-family: 'Tilt Prism', sans-serif ;
+}
+
+.carousel-subtitle {
+  font-size: 1.5vw;   
+  text-align: left;    
+  margin-bottom: 0px; 
+  z-index: 15;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
+
+.carousel-text {
+    max-width: 80%;    
+    margin: 0 auto;   
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    font-family: 'Lora', sans-serif;
+    font-size: 1vw;  
+    color: white;
+    z-index: 15;
+}
+
+.carousel-inner-link {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;  
+    z-index: 15;
+    color: #e486a6; 
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+}
+
+
+
+
+  .Caroussel img {
+    max-width: 100%;
+     min-height: 395px; 
+    width: auto;
+    object-fit: cover;
+    display: block;  
+}
+  
+  
+  
+.carousel-images .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+  
+  .carousel-images .carousel-image.active {
+    opacity: 1; 
+    z-index: 0;
+  }
+
+  .carousel-image {
+    pointer-events: none; /* Désactive les événements du pointeur pour tous les slides */
+  }
+  
+  .carousel-image.active {
+    pointer-events: auto; /* Active les événements du pointeur seulement pour le slide actif */
+    z-index: 2; /* Assurez-vous que le slide actif est toujours au-dessus des autres */
+  }
+  
+  .Arrow-left, .Arrow-right {
+    position: absolute;
+    top:35%; 
+    transform: translateY(-50%); 
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 10; 
+    color: #e486a6; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    font-size: 20px;
+    z-index: 0;
+  }
+  
+  .Arrow-left {
+    left: 5px; 
+    z-index: 10;
+  }
+  
+  .Arrow-right {
+    right: 5px;
+    z-index: 10;
+  }
+  
+  .cercle-carousel {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddd; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  
+  .cercle.active {
+    color: #e486a6;
   }
 }

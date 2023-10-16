@@ -58,8 +58,4 @@ body{
 }
 
 
-@media (max-width: 425px) {
-  .Main{
-    padding: 10px;
-  }
-}
+

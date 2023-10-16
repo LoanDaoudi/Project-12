@@ -18,7 +18,7 @@ const Skills = () => {
     return (
 
         <div className="Skills">
-            <h3>Mes compétences :</h3>
+            <h3>Compétences </h3>
             
             <div className="categories">
                 

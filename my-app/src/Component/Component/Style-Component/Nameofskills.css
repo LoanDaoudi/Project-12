@@ -37,34 +37,4 @@
     gap: 5px;
   }
 
-  @media (max-width: 1024px) {
-    .NameofSkills {
-      width: 70%; /* Ajustez la largeur pour s'adapter à l'écran */
-      height: auto; /* Ajustez la hauteur pour s'adapter au contenu */
-    }
-  }
   
-  /* Style pour écran de taille max 768px */
-  @media (max-width: 768px) {
-    .NameofSkills {
-      width: 85%; /* Ajustez la largeur pour s'adapter à l'écran */
-      height: auto; /* Ajustez la hauteur pour s'adapter au contenu */
-    }
-  
-    ul {
-      gap: 15px; /* Réduisez l'espacement entre les éléments */
-    }
-  
-    li {
-      gap: 2px; /* Réduisez l'espacement entre l'image et le texte */
-    }
-  }
-  
-  /* Style pour écran de taille max 425px */
-  @media (max-width: 425px) {
-    .NameofSkills {
-      width: 100%; /* Ajustez la largeur pour occuper la largeur de l'écran */
-      height: auto; /* Ajustez la hauteur pour s'adapter au contenu */
-      margin-bottom: 30px; /* Réduisez la marge inférieure */
-    }
-  }
