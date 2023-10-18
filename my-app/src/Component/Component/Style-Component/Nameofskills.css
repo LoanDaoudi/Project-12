@@ -2,7 +2,7 @@
 .NameofSkills {
     background-color: white;
     width: 60%;
-    height: 150px;
+    height: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
