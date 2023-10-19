@@ -50,8 +50,14 @@ h2 {
     height: auto;
     border-top-left-radius: 10px;  /* ou la valeur que vous voulez */
     border-bottom-left-radius: 10px;
-}
 
+}
+.linkdiv{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+
+}
 .return-link{
 
         position: fixed;
@@ -62,7 +68,6 @@ h2 {
         margin-left: 25px;
         padding: 25px;
         left: 0;
-        margin-bottom: 1190px;
         font-family: 'Lora', sans-serif;
         font-size: 1.3rem; 
         text-decoration: none; 
@@ -185,17 +190,22 @@ h2 {
         border-bottom-left-radius: 10px;
     }
     
+    .linkdiv{
+        position: absolute;
+        top: 8.5%;
+        margin-left: 0;
+       
+    
+    }
     .return-link{
     
             position: fixed;
-            background-color: black;
-            width: 180px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 250px;
             height: auto;
-            margin: auto;
-            margin-left: 5px;
+            margin-left: 0;
             padding: 25px;
             left: 0;
-            margin-bottom: 1190px;
             font-family: 'Lora', sans-serif;
             font-size: 1.3rem; 
             text-decoration: none; 
@@ -205,6 +215,8 @@ h2 {
             z-index: 100;
     
     }
+
+ 
     
     .project-image {
         width: 100%;
@@ -318,17 +330,22 @@ h2 {
         border-bottom-left-radius: 10px;
     }
     
+    .linkdiv{
+        position: absolute;
+        top: 8.5%;
+        margin-left: 0;
+       
+    
+    }
     .return-link{
     
             position: fixed;
-            background-color: black;
-            width: 180px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 250px;
             height: auto;
-            margin: auto;
-            margin-left: 5px;
+            margin-left: 0;
             padding: 25px;
             left: 0;
-            margin-bottom: 1190px;
             font-family: 'Lora', sans-serif;
             font-size: 1.3rem; 
             text-decoration: none; 
@@ -453,17 +470,22 @@ h2 {
         border-bottom-left-radius: 10px;
     }
     
+    .linkdiv{
+        position: absolute;
+        top: 8.5%;
+        margin-left: 0;
+       
+    
+    }
     .return-link{
     
             position: fixed;
-            background-color: black;
-            width: 180px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 250px;
             height: auto;
-            margin: auto;
-            margin-left: 5px;
+            margin-left: 0;
             padding: 25px;
             left: 0;
-            margin-bottom: 1190px;
             font-family: 'Lora', sans-serif;
             font-size: 1.3rem; 
             text-decoration: none; 
@@ -589,17 +611,23 @@ h2 {
         border-bottom-left-radius: 10px;
     }
     
+    .linkdiv{
+        position: absolute;
+        top: 5.5%;
+        margin-left: 0;
+       
+    
+    }
     .return-link{
     
             position: fixed;
-            background-color: black;
-            width: 180px;
-            height: auto;
-            margin: auto;
-            margin-left: 5px;
-            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 250px;
+            height: 60px;
+            margin-left: 0;
+            padding: 10px;
+            padding-left: 35px;
             left: 0;
-            margin-bottom: 1190px;
             font-family: 'Lora', sans-serif;
             font-size: 1.3rem; 
             text-decoration: none; 
@@ -725,17 +753,23 @@ h2 {
         border-bottom-left-radius: 10px;
     }
     
+    .linkdiv{
+        position: absolute;
+        top: 5.5%;
+        margin-left: 0;
+       
+    
+    }
     .return-link{
     
             position: fixed;
-            background-color: black;
-            width: 180px;
-            height: auto;
-            margin: auto;
-            margin-left: 5px;
-            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 250px;
+            height: 60px;
+            margin-left: 0;
+            padding: 10px;
+            padding-left: 35px;
             left: 0;
-            margin-bottom: 1190px;
             font-family: 'Lora', sans-serif;
             font-size: 1.3rem; 
             text-decoration: none; 

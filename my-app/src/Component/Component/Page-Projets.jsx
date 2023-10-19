@@ -93,7 +93,9 @@ if (!project) {
       <div>
       <div className="project-page">
         <Header/>
+        <div className='linkdiv'> 
         <Link to="/Project-12" className='return-link'>Retour à l'accueil</Link>
+        </div>
         <div className='title-header'>
           <h1>{project.title}</h1>
           <h2>{project.subtitle}</h2>

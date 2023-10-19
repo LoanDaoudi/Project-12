@@ -224,7 +224,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1vw;  
+    font-size: 1.75vw;  
     color: white;
     z-index: 15;
 }
@@ -383,7 +383,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1vw;  
+    font-size: 1.75vw;  
     color: white;
     z-index: 15;
 }
@@ -542,7 +542,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1vw;  
+    font-size: 1.75vw;  
     color: white;
     z-index: 15;
 }
@@ -698,11 +698,12 @@
 
 .carousel-text {
     max-width: 80%;    
-    margin: 0 auto;   
+    margin: auto;
+    margin: 0;   
     margin-bottom: 20px;
-    margin-left: 20px;  
+   
     font-family: 'Lora', sans-serif;
-    font-size: 1vw;  
+    font-size: 1.25vw;  
     color: white;
     z-index: 15;
 }
@@ -857,28 +858,29 @@
 }
 
 .carousel-text {
-    max-width: 80%;    
-    margin: 0 auto;   
-    margin-bottom: 20px;
-    margin-left: 20px;  
-    font-family: 'Lora', sans-serif;
-    font-size: 1vw;  
-    color: white;
-    z-index: 15;
+  max-width: 80%;    
+  margin: auto;
+  margin: 0;   
+  margin-bottom: 20px;
+ 
+  font-family: 'Lora', sans-serif;
+  font-size: 1.25vw;  
+  color: white;
+  z-index: 15;
 }
 
 .carousel-inner-link {
     display: flex;    
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
-    font-size: 1.25vw;  
+    
+    font-size: 1vw;  
     z-index: 15;
     color: #e486a6; 
 }
 
 .material-symbols-outlined {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 

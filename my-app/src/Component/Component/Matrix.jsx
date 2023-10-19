@@ -41,7 +41,7 @@ const MatrixBackground = () => {
     function createRow(index, initialDelay = 0) {
       const row = document.createElement('div');
       row.className = 'matrix-row';
-      row.style.top = `${(window.innerHeight / 80) * index}px`;  
+      row.style.top = `${(container.clientHeight / 80) * index}px`;
       const animationDuration = 18 + Math.random() * 25;
       row.style.animationDuration = `${animationDuration}s`;
       row.style.animationDelay = `-${initialDelay}s`;  
