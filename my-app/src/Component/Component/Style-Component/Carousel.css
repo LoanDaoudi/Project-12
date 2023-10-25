@@ -224,7 +224,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1.75vw;  
+    font-size: 1.75vh;  
     color: white;
     z-index: 15;
 }
@@ -323,6 +323,12 @@
     color: #e486a6;
   }
 
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -383,7 +389,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1.75vw;  
+    font-size: 1.25vh;  
     color: white;
     z-index: 15;
 }
@@ -393,7 +399,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    font-size: 1.25vw;  
+    font-size: 1.55vw;  
     z-index: 15;
     color: #e486a6; 
 }
@@ -481,6 +487,12 @@
   .cercle.active {
     color: #e486a6;
   }
+
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
+  }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
@@ -542,7 +554,7 @@
     margin-bottom: 20px;
     margin-left: 20px;  
     font-family: 'Lora', sans-serif;
-    font-size: 1.75vw;  
+    font-size: 1.25vw;  
     color: white;
     z-index: 15;
 }
@@ -552,7 +564,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    font-size: 1.25vw;  
+    font-size: 1.65vw;  
     z-index: 15;
     color: #e486a6; 
 }
@@ -641,6 +653,12 @@
   .cercle.active {
     color: #e486a6;
   }
+
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -701,7 +719,6 @@
     margin: auto;
     margin: 0;   
     margin-bottom: 20px;
-   
     font-family: 'Lora', sans-serif;
     font-size: 1.25vw;  
     color: white;
@@ -713,7 +730,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    font-size: 1.25vw;  
+    font-size: 1.55vw;  
     z-index: 15;
     color: #e486a6; 
 }
@@ -802,6 +819,11 @@
   .cercle.active {
     color: #e486a6;
   }
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
+  }
 }
 
 @media (max-width: 319px) {
@@ -874,7 +896,7 @@
     justify-content: flex-end;
     align-items: center;
     
-    font-size: 1vw;  
+    font-size: 1.25vw;  
     z-index: 15;
     color: #e486a6; 
 }
@@ -962,5 +984,10 @@
   
   .cercle.active {
     color: #e486a6;
+  }
+  @keyframes matrixSlide {
+    to {
+      transform: translateX(200vw);  
+    }
   }
 }

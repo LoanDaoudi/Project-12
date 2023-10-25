@@ -73,6 +73,7 @@ input[type="checkbox"]#burger {
     background-color: white; 
     list-style-type: none;
     padding: 0; 
+    gap: 15px;
 }
 
 #form1 input[type="checkbox"]:checked ~ #menu ul {
