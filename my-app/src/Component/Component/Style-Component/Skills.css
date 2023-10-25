@@ -27,6 +27,6 @@ margin: auto;
     display: flex;
     margin: auto;
     width: 100%;
-    height: auto;
+    min-height: 300px;
     border-radius: 25px;
 }
