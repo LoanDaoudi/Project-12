@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Project-12/static/css/main.ba5e16e2.css",
-    "main.js": "/Project-12/static/js/main.ec5a5189.js",
+    "main.css": "/Project-12/static/css/main.be3612c4.css",
+    "main.js": "/Project-12/static/js/main.475fa472.js",
     "static/js/787.28cb0dcd.chunk.js": "/Project-12/static/js/787.28cb0dcd.chunk.js",
-    "static/media/CV de Loan Daoudi.pdf": "/Project-12/static/media/CV de Loan Daoudi.372336b0aafcc794e82e.pdf",
     "static/media/CarouselProjet3.png": "/Project-12/static/media/CarouselProjet3.35bc2569c6f8ee28f870.png",
     "static/media/CarouselProjet4.png": "/Project-12/static/media/CarouselProjet4.8b067d503590aa6e3de8.png",
+    "static/media/CV de Loan Daoudi.pdf": "/Project-12/static/media/CV de Loan Daoudi.0f1cc885f908e3c57441.pdf",
     "static/media/CarouselProjet5.png": "/Project-12/static/media/CarouselProjet5.7d37be1d830ef055c767.png",
     "static/media/CarouselProjet1.png": "/Project-12/static/media/CarouselProjet1.e57c50ebd86df776d457.png",
     "static/media/CarouselProjet2.png": "/Project-12/static/media/CarouselProjet2.3cab62a08a803ab7524f.png",
-    "static/media/ProfilePicture.jpg": "/Project-12/static/media/ProfilePicture.cfc4bfb901ee5ff1b170.jpg",
+    "static/media/ProfilePicture.jpg": "/Project-12/static/media/ProfilePicture.408c0b44d93da0846910.jpg",
+    "static/media/myskills.mp4": "/Project-12/static/media/myskills.84851e5b70c5a4dc2c2c.mp4",
     "static/media/netlify-logopng.png": "/Project-12/static/media/netlify-logopng.603ef81c872f9df8c343.png",
     "static/media/PostmanLogo.png": "/Project-12/static/media/PostmanLogo.222f64891a46d9de0238.png",
     "static/media/Sasslogo.png": "/Project-12/static/media/Sasslogo.4f3c022cc764b9e30eb0.png",
@@ -23,12 +24,12 @@
     "static/media/Csslogo.png": "/Project-12/static/media/Csslogo.6104fd00dc531636f685.png",
     "static/media/Logo.PNG": "/Project-12/static/media/Logo.20594bb723a99194ab6b.PNG",
     "index.html": "/Project-12/index.html",
-    "main.ba5e16e2.css.map": "/Project-12/static/css/main.ba5e16e2.css.map",
-    "main.ec5a5189.js.map": "/Project-12/static/js/main.ec5a5189.js.map",
+    "main.be3612c4.css.map": "/Project-12/static/css/main.be3612c4.css.map",
+    "main.475fa472.js.map": "/Project-12/static/js/main.475fa472.js.map",
     "787.28cb0dcd.chunk.js.map": "/Project-12/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba5e16e2.css",
-    "static/js/main.ec5a5189.js"
+    "static/css/main.be3612c4.css",
+    "static/js/main.475fa472.js"
   ]
 }
